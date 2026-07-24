@@ -3,33 +3,53 @@
    - Projetos: carregados da API do GitHub (topic "portifolio")
    - Contribuições: data/stats.json (atualizado diariamente por
      GitHub Actions) com fallback para API pública
+   - Idiomas: ver js/i18n.js
    ============================================================ */
 
 const GH_USER = 'madeiragab';
 const GH_TOPIC = 'portifolio';
 
 /* Topics que funcionam como CATEGORIA (viram filtro).
+   O valor é a chave de tradução em js/i18n.js.
    Qualquer outro topic vira chip de tecnologia no card. */
 const CATEGORIAS = {
-  backend: 'BACKEND',
-  web: 'WEB',
-  game: 'GAME',
-  ai: 'IA',
-  hardware: 'HARDWARE',
-  tool: 'FERRAMENTA',
-  security: 'SECURITY',
-  mobile: 'MOBILE',
-  dashboard: 'DASHBOARD',
+  backend: 'cat.backend',
+  web: 'cat.web',
+  game: 'cat.game',
+  ai: 'cat.ai',
+  hardware: 'cat.hardware',
+  tool: 'cat.tool',
+  security: 'cat.security',
+  mobile: 'cat.mobile',
+  dashboard: 'cat.dashboard',
 };
+const CATEGORIA_PADRAO = 'cat.outro';
 
 /* Fallback caso a API do GitHub esteja fora do ar ou com rate limit */
 const PROJETOS_FALLBACK = [
-  { name: 'social-network', category: 'BACKEND', tech: 'Django · DRF · PostgreSQL', description: 'Rede social backend-first: domínio modelado em UML antes do código, regras de negócio no servidor e documentação completa.', html_url: 'https://github.com/madeiragab/social-network', stargazers_count: 1 },
-  { name: 'rpg-panel', category: 'WEB', tech: 'Django · Python · JS', description: 'Painel web privado para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventário e papéis de mestre/jogador.', html_url: 'https://github.com/madeiragab/rpg-panel', stargazers_count: 0 },
-  { name: 'tcc-simulador-ia', category: 'IA', tech: 'Godot · GDScript · Python', description: 'Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.', html_url: 'https://github.com/madeiragab/tcc-simulador-ia', stargazers_count: 1 },
-  { name: 'Guns-and-boots', category: 'GAME', tech: 'Python · Pygame', description: 'Jogo 2D retrô-futurista por turnos, com máquina de estados, sistema de save e modo mobile.', html_url: 'https://github.com/madeiragab/Guns-and-boots', stargazers_count: 1 },
-  { name: 'darkos-ga36-port', category: 'HARDWARE', tech: 'Linux · Engenharia reversa', description: 'Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).', html_url: 'https://github.com/madeiragab/darkos-ga36-port', stargazers_count: 2 },
+  { name: 'social-network', categoria: 'cat.backend', tech: 'Django · DRF · PostgreSQL', description: 'Rede social backend-first: domínio modelado em UML antes do código, regras de negócio no servidor e documentação completa.', html_url: 'https://github.com/madeiragab/social-network', stargazers_count: 1 },
+  { name: 'rpg-panel', categoria: 'cat.web', tech: 'Django · Python · JS', description: 'Painel web privado para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventário e papéis de mestre/jogador.', html_url: 'https://github.com/madeiragab/rpg-panel', stargazers_count: 0 },
+  { name: 'tcc-simulador-ia', categoria: 'cat.ai', tech: 'Godot · GDScript · Python', description: 'Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.', html_url: 'https://github.com/madeiragab/tcc-simulador-ia', stargazers_count: 1 },
+  { name: 'Guns-and-boots', categoria: 'cat.game', tech: 'Python · Pygame', description: 'Jogo 2D retrô-futurista por turnos, com máquina de estados, sistema de save e modo mobile.', html_url: 'https://github.com/madeiragab/Guns-and-boots', stargazers_count: 1 },
+  { name: 'darkos-ga36-port', categoria: 'cat.hardware', tech: 'Linux · Engenharia reversa', description: 'Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).', html_url: 'https://github.com/madeiragab/darkos-ga36-port', stargazers_count: 2 },
 ];
+
+const LOCALES = { pt: 'pt-BR', en: 'en-US', es: 'es-ES' };
+
+/* ============ IDIOMA ============ */
+document.querySelectorAll('.lang-btn').forEach(btn =>
+  btn.addEventListener('click', () => i18n.aplicar(btn.dataset.lang))
+);
+
+/* Quando o idioma muda, redesenha tudo que veio de dados. */
+window.addEventListener('idiomamudou', () => {
+  if (projetos.length) {
+    renderFiltros();
+    renderProjetos(categoriaAtiva);
+    projCount.textContent = i18n.t('proj.count', { n: projetos.length });
+  }
+  renderContribAtualizado();
+});
 
 /* ============ TEMA ============ */
 const themeToggle = document.getElementById('themeToggle');
@@ -61,6 +81,7 @@ const projGrid = document.getElementById('projGrid');
 const filtrosEl = document.getElementById('filtros');
 const projCount = document.getElementById('projCount');
 let projetos = [];
+let categoriaAtiva = null;   // null = todos
 
 async function carregarProjetos() {
   try {
@@ -82,10 +103,10 @@ async function carregarProjetos() {
     }
   }
   renderFiltros();
-  renderProjetos('TODOS');
+  renderProjetos(null);
   const stat = document.getElementById('statProjects');
   if (stat) stat.textContent = projetos.length;
-  projCount.textContent = `${projetos.length} no total`;
+  projCount.textContent = i18n.t('proj.count', { n: projetos.length });
 }
 
 function normalizarRepo(repo) {
@@ -97,9 +118,9 @@ function normalizarRepo(repo) {
     .join(' · ');
   return {
     name: repo.name,
-    category: catTopic ? CATEGORIAS[catTopic] : 'PROJETO',
+    categoria: catTopic ? CATEGORIAS[catTopic] : CATEGORIA_PADRAO,
     tech: tech || (repo.language || ''),
-    description: repo.description || 'Sem descrição (ainda!).',
+    description: repo.description || '',
     html_url: repo.html_url,
     homepage: repo.homepage,
     stargazers_count: repo.stargazers_count || 0,
@@ -107,36 +128,43 @@ function normalizarRepo(repo) {
 }
 
 function renderFiltros() {
-  const cats = ['TODOS', ...new Set(projetos.map(p => p.category))];
-  filtrosEl.innerHTML = cats
-    .map(c => `<button class="filtro${c === 'TODOS' ? ' ativo' : ''}" data-cat="${c}">${c}</button>`)
-    .join('');
+  const cats = [...new Set(projetos.map(p => p.categoria))];
+  const botoes = [
+    `<button class="filtro${categoriaAtiva === null ? ' ativo' : ''}" data-cat="">${esc(i18n.t('proj.todos'))}</button>`,
+    ...cats.map(c =>
+      `<button class="filtro${categoriaAtiva === c ? ' ativo' : ''}" data-cat="${c}">${esc(i18n.t(c))}</button>`
+    ),
+  ];
+  filtrosEl.innerHTML = botoes.join('');
   filtrosEl.querySelectorAll('.filtro').forEach(btn =>
     btn.addEventListener('click', () => {
+      categoriaAtiva = btn.dataset.cat || null;
       filtrosEl.querySelectorAll('.filtro').forEach(b => b.classList.remove('ativo'));
       btn.classList.add('ativo');
-      renderProjetos(btn.dataset.cat);
+      renderProjetos(categoriaAtiva);
     })
   );
 }
 
 function renderProjetos(categoria) {
-  const lista = categoria === 'TODOS' ? projetos : projetos.filter(p => p.category === categoria);
-  projGrid.innerHTML = lista.map(p => `
+  const lista = categoria ? projetos.filter(p => p.categoria === categoria) : projetos;
+  projGrid.innerHTML = lista.map(p => {
+    const desc = i18n.descricaoProjeto(p.name, p.description) || i18n.t('proj.semDesc');
+    return `
     <article class="proj-card">
       <div class="proj-head">
         <h3 class="proj-nome">${esc(p.name.replace(/-/g, ' '))}</h3>
-        <span class="proj-cat">${esc(p.category)}</span>
+        <span class="proj-cat">${esc(i18n.t(p.categoria))}</span>
       </div>
       ${p.tech ? `<p class="proj-tech">${esc(p.tech)}</p>` : ''}
-      <p class="proj-desc">${esc(p.description)}</p>
+      <p class="proj-desc">${esc(desc)}</p>
       <div class="proj-links">
-        <a href="${esc(p.html_url)}" target="_blank" rel="noopener">Ver no GitHub ↗</a>
-        ${p.homepage ? `<a href="${esc(p.homepage)}" target="_blank" rel="noopener">Demo ↗</a>` : ''}
+        <a href="${esc(p.html_url)}" target="_blank" rel="noopener">${esc(i18n.t('proj.verGithub'))}</a>
+        ${p.homepage ? `<a href="${esc(p.homepage)}" target="_blank" rel="noopener">${esc(i18n.t('proj.demo'))}</a>` : ''}
         ${p.stargazers_count ? `<span class="proj-stars">★ ${p.stargazers_count}</span>` : ''}
       </div>
-    </article>
-  `).join('');
+    </article>`;
+  }).join('');
 }
 
 function esc(s) {
@@ -146,9 +174,10 @@ function esc(s) {
 }
 
 /* ============ CONTRIBUIÇÕES ============ */
+let contribAtualizadoEm = null;
+
 async function carregarContribuicoes() {
   let dias = null;
-  let atualizadoEm = null;
 
   /* Fonte 1: stats.json gerado diariamente pelo GitHub Actions */
   try {
@@ -156,7 +185,7 @@ async function carregarContribuicoes() {
     if (res.ok) {
       const stats = await res.json();
       dias = stats.days;
-      atualizadoEm = stats.updated_at;
+      contribAtualizadoEm = stats.updated_at;
     }
   } catch { /* segue pro fallback */ }
 
@@ -172,7 +201,7 @@ async function carregarContribuicoes() {
   }
 
   if (!dias || dias.length === 0) {
-    document.getElementById('contribUpdated').textContent = '// não foi possível carregar os dados agora';
+    document.getElementById('contribUpdated').textContent = i18n.t('contrib.erro');
     return;
   }
 
@@ -199,11 +228,18 @@ async function carregarContribuicoes() {
   animaNumero('cAno', ano);
   animaNumero('cStreak', streak);
 
-  if (atualizadoEm) {
-    const d = new Date(atualizadoEm);
-    document.getElementById('contribUpdated').textContent =
-      `// última atualização automática: ${d.toLocaleDateString('pt-BR')} às ${d.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-  }
+  renderContribAtualizado();
+}
+
+function renderContribAtualizado() {
+  const el = document.getElementById('contribUpdated');
+  if (!el || !contribAtualizadoEm) return;
+  const loc = LOCALES[i18n.idioma] || 'pt-BR';
+  const d = new Date(contribAtualizadoEm);
+  el.textContent = i18n.t('contrib.atualizado', {
+    data: d.toLocaleDateString(loc),
+    hora: d.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit' }),
+  });
 }
 
 function animaNumero(id, alvo) {
@@ -265,7 +301,8 @@ document.getElementById('contatoForm').addEventListener('submit', async e => {
   const msg = document.getElementById('fMsg').value;
 
   botao.disabled = true;
-  botao.textContent = 'ENVIANDO…';
+  botao.removeAttribute('data-i18n');      // impede que a tradução sobrescreva o estado
+  botao.textContent = i18n.t('form.enviando');
 
   try {
     const res = await fetch(FORM_ENDPOINT, {
@@ -281,18 +318,24 @@ document.getElementById('contatoForm').addEventListener('submit', async e => {
     });
     if (!res.ok) throw new Error(`FormSubmit ${res.status}`);
     form.reset();
-    botao.textContent = '✓ MENSAGEM ENVIADA';
-    setTimeout(() => { botao.textContent = 'ENVIAR MENSAGEM'; botao.disabled = false; }, 4000);
+    botao.textContent = i18n.t('form.enviado');
+    setTimeout(() => restauraBotao(botao), 4000);
   } catch {
     /* plano B: abre o cliente de e-mail do visitante */
     const corpo = encodeURIComponent(`${msg}\n\n— ${nome} (${email})`);
     window.location.href =
       `mailto:gabrielmadeira1504@gmail.com?subject=${encodeURIComponent(assunto)}&body=${corpo}`;
-    botao.textContent = 'ENVIAR MENSAGEM';
-    botao.disabled = false;
+    restauraBotao(botao);
   }
 });
 
+function restauraBotao(botao) {
+  botao.dataset.i18n = 'form.enviar';
+  botao.textContent = i18n.t('form.enviar');
+  botao.disabled = false;
+}
+
 /* ============ INIT ============ */
+i18n.aplicar();
 carregarProjetos();
 carregarContribuicoes();
