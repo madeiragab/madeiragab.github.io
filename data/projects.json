@@ -1,0 +1,80 @@
+[
+  {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": null,
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-07-24T18:30:57Z"
+  },
+  {
+    "name": "Guns-and-boots",
+    "description": "Jogo 2D retro-futurista por turnos, com maquina de estados, sistema de save e modo mobile.",
+    "html_url": "https://github.com/madeiragab/Guns-and-boots",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "game",
+      "portifolio",
+      "pygame",
+      "python"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-07-24T18:31:09Z"
+  },
+  {
+    "name": "social-network",
+    "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
+    "html_url": "https://github.com/madeiragab/social-network",
+    "homepage": null,
+    "language": "JavaScript",
+    "topics": [
+      "backend",
+      "django",
+      "django-rest-framework",
+      "portifolio",
+      "postgresql"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-07-24T18:30:55Z"
+  },
+  {
+    "name": "darkos-ga36-port",
+    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
+    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
+    "homepage": null,
+    "language": null,
+    "topics": [
+      "hardware",
+      "linux",
+      "portifolio",
+      "reverse-engineering"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-07-24T18:31:10Z"
+  },
+  {
+    "name": "rpg-panel",
+    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
+    "html_url": "https://github.com/madeiragab/rpg-panel",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "django",
+      "javascript",
+      "portifolio",
+      "python",
+      "web"
+    ],
+    "stargazers_count": 0,
+    "updated_at": "2026-07-24T18:30:56Z"
+  }
+]
