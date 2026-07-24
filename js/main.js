@@ -250,16 +250,47 @@ document.querySelectorAll('.section > *').forEach(el => {
   revealObserver.observe(el);
 });
 
-/* ============ FORM DE CONTATO (mailto) ============ */
-document.getElementById('contatoForm').addEventListener('submit', e => {
+/* ============ FORM DE CONTATO ============
+   Envia e-mail de verdade via FormSubmit (https://formsubmit.co).
+   Se o serviço falhar, cai no mailto: como plano B. */
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/gabrielmadeira1504@gmail.com';
+
+document.getElementById('contatoForm').addEventListener('submit', async e => {
   e.preventDefault();
+  const form = e.target;
+  const botao = form.querySelector('button[type="submit"]');
   const nome = document.getElementById('fNome').value;
   const email = document.getElementById('fEmail').value;
   const assunto = document.getElementById('fAssunto').value;
   const msg = document.getElementById('fMsg').value;
-  const corpo = encodeURIComponent(`${msg}\n\n— ${nome} (${email})`);
-  window.location.href =
-    `mailto:gabrielmadeira1504@gmail.com?subject=${encodeURIComponent(assunto)}&body=${corpo}`;
+
+  botao.disabled = true;
+  botao.textContent = 'ENVIANDO…';
+
+  try {
+    const res = await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        name: nome,
+        email: email,
+        _subject: `[portfólio] ${assunto}`,
+        message: msg,
+        _template: 'table',
+      }),
+    });
+    if (!res.ok) throw new Error(`FormSubmit ${res.status}`);
+    form.reset();
+    botao.textContent = '✓ MENSAGEM ENVIADA';
+    setTimeout(() => { botao.textContent = 'ENVIAR MENSAGEM'; botao.disabled = false; }, 4000);
+  } catch {
+    /* plano B: abre o cliente de e-mail do visitante */
+    const corpo = encodeURIComponent(`${msg}\n\n— ${nome} (${email})`);
+    window.location.href =
+      `mailto:gabrielmadeira1504@gmail.com?subject=${encodeURIComponent(assunto)}&body=${corpo}`;
+    botao.textContent = 'ENVIAR MENSAGEM';
+    botao.disabled = false;
+  }
 });
 
 /* ============ INIT ============ */

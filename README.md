@@ -85,6 +85,18 @@ Fontes de dados, em ordem de prioridade:
 1. `data/stats.json` (gerado pelo workflow diário — dado oficial via GraphQL);
 2. fallback: API pública `github-contributions-api.jogruber.de`.
 
+## ✉️ Formulário de contato
+
+O formulário envia e-mail de verdade para `gabrielmadeira1504@gmail.com` usando o
+[FormSubmit](https://formsubmit.co) (gratuito, sem conta, sem backend).
+
+- **Ativação (uma única vez):** no primeiro envio, o FormSubmit manda um e-mail
+  de confirmação para o seu Gmail — clique em **Activate** e pronto; a partir
+  daí toda mensagem do site chega na sua caixa de entrada.
+- Se o serviço estiver fora do ar, o site abre o cliente de e-mail do visitante
+  (`mailto:`) como plano B.
+- Para trocar o destino, edite a constante `FORM_ENDPOINT` em `js/main.js`.
+
 ## 🎨 Personalização
 
 | O quê | Onde |
