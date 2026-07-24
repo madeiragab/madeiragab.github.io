@@ -28,6 +28,7 @@ hospedado no **GitHub Pages**. Duas coisas o tornam "vivo":
 ├─ css/
 │  └─ style.css                        → tema preto/vermelho/branco + responsivo
 ├─ js/
+│  ├─ i18n.js                          → traduções PT · EN · ES
 │  └─ main.js                          → API do GitHub, filtros, tema, animações
 ├─ assets/
 │  └─ favicon.svg                      → favicon ">_"
@@ -85,6 +86,44 @@ Fontes de dados, em ordem de prioridade:
 1. `data/stats.json` (gerado pelo workflow diário — dado oficial via GraphQL);
 2. fallback: API pública `github-contributions-api.jogruber.de`.
 
+## 🌍 Idiomas (PT · EN · ES)
+
+O site inteiro troca de idioma pelo seletor no menu, sem recarregar a página.
+Toda a tradução vive em [`js/i18n.js`](js/i18n.js).
+
+- O idioma escolhido fica salvo no navegador (`localStorage`). Na primeira
+  visita, o site detecta o idioma do navegador e cai no português se não for
+  um dos três.
+- O atributo `lang` do `<html>`, o `<title>` e a meta description também
+  mudam — importante para buscadores e leitores de tela.
+- As datas seguem o formato de cada idioma (`24/07/2026`, `7/24/2026`,
+  `24/7/2026`).
+
+### Como traduzir um texto novo
+
+1. No HTML, marque o elemento com um destes atributos:
+
+   | Atributo | O que troca |
+   |---|---|
+   | `data-i18n` | o texto do elemento |
+   | `data-i18n-html` | o HTML interno (textos com `<strong>`, `<span>`) |
+   | `data-i18n-ph` | o `placeholder` |
+   | `data-i18n-aria` | o `aria-label` |
+   | `data-i18n-alt` | o `alt` de imagens |
+
+2. Adicione a chave nos três idiomas em `js/i18n.js`, dentro de `TEXTOS`.
+
+Se uma chave faltar em algum idioma, o site usa o texto em português em vez
+de quebrar.
+
+### Descrição dos projetos
+
+Os cards vêm da API do GitHub, então a descrição original é a do repositório
+(em português). Para exibir uma versão traduzida, adicione o nome do
+repositório no objeto `DESCRICOES` em `js/i18n.js`, em `en` e `es`. Projeto
+sem tradução cadastrada aparece com a descrição do GitHub mesmo — nada
+quebra.
+
 ## ✉️ Formulário de contato
 
 O formulário envia e-mail de verdade para `gabrielmadeira1504@gmail.com` usando o
@@ -105,7 +144,8 @@ O formulário envia e-mail de verdade para `gabrielmadeira1504@gmail.com` usando
 | Usuário do GitHub | Constante `GH_USER` em `js/main.js` e env `GH_USER` no workflow |
 | Topic que define o que aparece | Constante `GH_TOPIC` em `js/main.js` |
 | Categorias de filtro | Objeto `CATEGORIAS` em `js/main.js` |
-| Textos (bio, jornada, skills) | Direto no `index.html` |
+| Textos (bio, jornada, skills) | `js/i18n.js` — nos três idiomas |
+| Adicionar um idioma novo | `IDIOMAS` + um bloco em `TEXTOS` (`js/i18n.js`) e um botão no menu |
 | Horário da atualização diária | Campo `cron` do workflow (em UTC!) |
 | Foto de perfil | `index.html` usa o avatar do GitHub — troque a URL da `<img>` na seção Sobre |
 

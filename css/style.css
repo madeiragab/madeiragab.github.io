@@ -88,6 +88,33 @@ code {
   cursor: pointer;
   font-size: .9rem;
 }
+
+/* ---- seletor de idioma ---- */
+.lang-switch {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.lang-btn {
+  font-family: var(--mono);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  background: none;
+  border: none;
+  border-right: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: .3rem .5rem;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.lang-btn:last-child { border-right: none; }
+.lang-btn:hover { color: var(--red); }
+.lang-btn.ativo {
+  background: var(--red);
+  color: #fff;
+}
 .nav-burger {
   display: none;
   background: none;
@@ -577,6 +604,7 @@ code {
     align-items: flex-start;
   }
   .nav-links.aberto { display: flex; }
+  .lang-switch { margin-top: .4rem; }
   .sobre-grid,
   .backend-grid,
   .contato-grid,
