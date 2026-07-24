@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darosa % Dev Backend</title>
+  <meta name="description" content="Gabriel Madeira — estudante de Ciência da Computação focado em backend, Django, PostgreSQL e APIs REST. Portfólio de projetos reais." />
+  <meta property="og:title" content="Darosa.dev — Gabriel Madeira" />
+  <meta property="og:description" content="Backend, APIs REST, Django e projetos reais — não só tutoriais." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/77208884?v=4" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,800;1,400&family=Archivo:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <a href="#top" class="nav-logo">DAROSA<span class="red">.DEV</span></a>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#sobre">SOBRE</a>
+      <a href="#projetos">PROJETOS</a>
+      <a href="#backend">BACKEND</a>
+      <a href="#stack">STACK</a>
+      <a href="#jornada">JORNADA</a>
+      <a href="#contato">CONTATO</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">☀️</button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-badges">
+        <span class="badge badge-pulse">● OPEN TO WORK</span>
+        <span class="badge-sub">BACKEND • APIS REST • DJANGO • POSTGRESQL</span>
+      </div>
+      <h1 class="hero-title">
+        DEVELOPER<br />
+        <span class="stroke">BACKEND</span> &amp;<br />
+        <span class="red">BUILDER</span><span class="cursor">_</span>
+      </h1>
+      <p class="hero-desc">
+        Sistemas funcionais, MVPs e backends bem modelados — construídos entre a
+        faculdade de Ciência da Computação, o TCC e a curiosidade de entender
+        como as coisas funcionam por dentro (até console clone eu já abri).
+      </p>
+      <div class="hero-cta">
+        <a href="#projetos" class="btn btn-solid">VER PROJETOS →</a>
+        <a href="https://github.com/madeiragab" target="_blank" rel="noopener" class="btn btn-ghost">&gt;_ GITHUB</a>
+      </div>
+    </div>
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre">
+      <p class="section-eyebrow">/* um pouco sobre mim */ <span class="red">quem está por trás do código</span></p>
+      <h2 class="section-title">QUEM ESTÁ POR TRÁS DO CÓDIGO.</h2>
+
+      <div class="sobre-grid">
+        <div class="sobre-foto-wrap">
+          <div class="sobre-foto">
+            <img src="https://avatars.githubusercontent.com/u/77208884?v=4" alt="Foto de Gabriel Madeira" />
+            <div class="foto-tag">gabriel.jpg</div>
+          </div>
+        </div>
+        <div class="sobre-texto">
+          <p>Sou <strong>Gabriel Madeira</strong>, estudante de <strong>Ciência da Computação</strong> no
+            IFSulDeMinas, apaixonado por construir <span class="red">coisas reais</span> — não só tutoriais.</p>
+          <p>Meu foco é <strong>backend</strong>: modelagem de domínio, regras de negócio bem definidas,
+            APIs REST e banco de dados relacional. Django e PostgreSQL são as ferramentas do dia a dia.</p>
+          <p>Também gosto de sair da zona de conforto: já fiz jogo por turnos em Pygame, simulador de IA
+            em Godot pro TCC e até engenharia reversa de um console portátil clone — porque entender
+            como as coisas <span class="red">quebram</span> é a melhor forma de aprender a construí-las melhor.</p>
+          <p>Com curiosidade como motor, código como ferramenta e documentação como religião.</p>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Django</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">APIs REST</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Godot</span>
+            <span class="chip">Git</span>
+            <span class="chip">Linux</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="stat-key">// years_of_study</p>
+          <p class="stat-num">4+</p>
+          <p class="stat-label">ANOS ESTUDANDO</p>
+        </div>
+        <div class="stat">
+          <p class="stat-key">// projects_built</p>
+          <p class="stat-num" id="statProjects">5</p>
+          <p class="stat-label">PROJETOS REAIS ATÉ AGORA</p>
+        </div>
+        <div class="stat">
+          <p class="stat-key">// tech_stacks</p>
+          <p class="stat-num">10</p>
+          <p class="stat-label">STACKS</p>
+        </div>
+        <div class="stat">
+          <p class="stat-key">// cafes</p>
+          <p class="stat-num">∞</p>
+          <p class="stat-label">CAFÉS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTRIBUIÇÕES ============ -->
+    <section class="section" id="contribuicoes">
+      <p class="section-eyebrow">/* atividade no github */ <span class="red">commits · PRs · issues</span></p>
+      <h2 class="section-title">CONTRIBUIÇÕES EM NÚMEROS.</h2>
+      <p class="section-desc">Atividade real, direto do meu GitHub — atualizada todos os dias de forma automática.</p>
+      <div class="contrib-grid">
+        <div class="stat">
+          <p class="stat-key">// hoje</p>
+          <p class="stat-num" id="cHoje">—</p>
+          <p class="stat-label">CONTRIBUIÇÕES HOJE</p>
+        </div>
+        <div class="stat">
+          <p class="stat-key">// este_mes</p>
+          <p class="stat-num" id="cMes">—</p>
+          <p class="stat-label">CONTRIBUIÇÕES ESTE MÊS</p>
+        </div>
+        <div class="stat">
+          <p class="stat-key">// ultimo_ano</p>
+          <p class="stat-num" id="cAno">—</p>
+          <p class="stat-label">NO ÚLTIMO ANO</p>
+        </div>
+        <div class="stat">
+          <p class="stat-key">// sequencia</p>
+          <p class="stat-num" id="cStreak">—</p>
+          <p class="stat-label">DIAS SEGUIDOS CONTRIBUINDO</p>
+        </div>
+      </div>
+      <p class="contrib-updated" id="contribUpdated"></p>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="section" id="projetos">
+      <p class="section-eyebrow">/* projetos que construí */ <span class="red" id="projCount">carregando…</span></p>
+      <h2 class="section-title">ONDE BACKEND, JOGOS E HARDWARE SE ENCONTRAM.</h2>
+      <p class="section-desc">
+        Cada projeto abaixo é uma tentativa diferente de resolver um problema real.
+        Esta lista vem <strong>direto da API do GitHub</strong>: todo repositório meu com o topic
+        <code>portifolio</code> aparece aqui automaticamente.
+      </p>
+
+      <div class="filtros" id="filtros"></div>
+      <div class="proj-grid" id="projGrid">
+        <p class="proj-loading">&gt;_ buscando repositórios na API do GitHub<span class="cursor">…</span></p>
+      </div>
+    </section>
+
+    <!-- ============ BACKEND ============ -->
+    <section class="section" id="backend">
+      <p class="section-eyebrow">/* backend e arquitetura */ <span class="red">domínio · dados · APIs</span></p>
+      <h2 class="section-title">QUANDO A INTERFACE SILENCIA, ENTRA O BACKEND.</h2>
+      <div class="backend-grid">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+            <span class="t-title">gabriel@lab: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="t-prompt">gabriel@lab:~$</span> whoami</p>
+            <p class="t-out">estudante de ciência da computação · backend dev</p>
+            <p><span class="t-prompt">gabriel@lab:~$</span> cat foco.txt</p>
+            <p class="t-out">modelagem de domínio, APIs REST, PostgreSQL e docs</p>
+            <p><span class="t-prompt">gabriel@lab:~$</span> ls ferramentas/</p>
+            <p class="t-out">django drf postgres docker git uml</p>
+            <p><span class="t-prompt">gabriel@lab:~$</span> <span class="cursor">_</span></p>
+          </div>
+        </div>
+        <div class="backend-info">
+          <h3>FERRAMENTAS</h3>
+          <div class="chips">
+            <span class="chip">Django</span>
+            <span class="chip">Django REST Framework</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">UML · Diagramas</span>
+          </div>
+          <h3>PROJETOS BACKEND</h3>
+          <p>
+            <strong class="red">Social Network</strong> (backend-first, domínio modelado em UML antes do código) e
+            <strong class="red">RPG Panel</strong> (painel Django com controle de acesso por papéis) nasceram
+            desse interesse — sistemas onde a regra de negócio mora no servidor, documentada e testável.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack">
+      <p class="section-eyebrow">/* stack que uso */ <span class="red">linguagens, ferramentas e infra</span></p>
+      <h2 class="section-title">AS TECNOLOGIAS POR TRÁS DOS MEUS PROJETOS.</h2>
+      <p class="section-desc">De linguagens a banco de dados — o que uso no dia a dia pra construir, documentar e colocar no ar.</p>
+
+      <div class="skills-grid">
+        <div class="skill" data-nivel="88"><span class="skill-nome">▸ Python</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">88%</span></div>
+        <div class="skill" data-nivel="82"><span class="skill-nome">▸ Django</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">82%</span></div>
+        <div class="skill" data-nivel="78"><span class="skill-nome">▸ PostgreSQL / SQL</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">78%</span></div>
+        <div class="skill" data-nivel="75"><span class="skill-nome">▸ APIs REST</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">75%</span></div>
+        <div class="skill" data-nivel="72"><span class="skill-nome">▸ JavaScript</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">72%</span></div>
+        <div class="skill" data-nivel="70"><span class="skill-nome">▸ HTML / CSS</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">70%</span></div>
+        <div class="skill" data-nivel="68"><span class="skill-nome">▸ Godot / GDScript</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">68%</span></div>
+        <div class="skill" data-nivel="65"><span class="skill-nome">▸ Linux / Hardware</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">65%</span></div>
+      </div>
+
+      <div class="chips chips-center">
+        <span class="chip">Python</span>
+        <span class="chip">Django</span>
+        <span class="chip">Django REST Framework</span>
+        <span class="chip">PostgreSQL</span>
+        <span class="chip">SQLite</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">HTML · CSS</span>
+        <span class="chip">Pygame</span>
+        <span class="chip">Godot</span>
+        <span class="chip">Git · GitHub</span>
+      </div>
+    </section>
+
+    <!-- ============ JORNADA ============ -->
+    <section class="section" id="jornada">
+      <p class="section-eyebrow">/* trajetória */ <span class="red">ciência da computação</span></p>
+      <h2 class="section-title">MINHA JORNADA ATÉ AQUI.</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <p class="tl-quando">2026 — AGORA</p>
+          <h3 class="tl-titulo">TCC: simulador tático de IA</h3>
+          <p>Desenvolvendo em Godot um ambiente de simulação para comparar estratégias de tomada de
+            decisão de agentes de IA — com análise de dados em Python.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-quando">2025 — 2026</p>
+          <h3 class="tl-titulo">Backend de verdade</h3>
+          <p>De projetos simples para sistemas completos: modelagem de domínio com UML, autenticação,
+            APIs REST com Django REST Framework e PostgreSQL. Social Network e RPG Panel são frutos dessa fase.</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-quando">2024 — 2025</p>
+          <h3 class="tl-titulo">Fundamentos + projetos reais</h3>
+          <p>Ciência da Computação no IFSulDeMinas. Jogo por turnos em Pygame (Guns and Boots) e o hábito
+            de documentar tudo — até a engenharia reversa de um console portátil clone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <p class="section-eyebrow">/* contato */ <span class="red">fale comigo</span></p>
+      <h2 class="section-title">VAMOS TRABALHAR JUNTOS?</h2>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <p>Tem um projeto em mente, uma vaga ou quer bater um papo sobre backend e tecnologia?
+            Me manda uma mensagem, respondo o mais breve possível.</p>
+          <a class="contato-link" href="mailto:gabrielmadeira1504@gmail.com">✉ gabrielmadeira1504@gmail.com</a>
+          <a class="contato-link" href="https://github.com/madeiragab" target="_blank" rel="noopener">◐ github.com/madeiragab</a>
+        </div>
+        <form class="contato-form" id="contatoForm">
+          <input type="text" id="fNome" placeholder="nome" required />
+          <input type="email" id="fEmail" placeholder="email" required />
+          <input type="text" id="fAssunto" placeholder="assunto" required />
+          <textarea id="fMsg" rows="5" placeholder="mensagem" required></textarea>
+          <button type="submit" class="btn btn-solid">ENVIAR MENSAGEM</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>DAROSA <span class="red">%</span> DEV BACKEND — construído com curiosidade e café.</p>
+    <p class="footer-mono">&gt;_ projetos carregados ao vivo da API do GitHub</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
