@@ -124,6 +124,33 @@ code {
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.hero-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hero-img img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  filter: drop-shadow(0 24px 48px color-mix(in srgb, var(--red) 35%, transparent));
+  animation: flutua 4s ease-in-out infinite;
+}
+@keyframes flutua {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.hero-img::before {
+  content: '';
+  position: absolute;
+  inset: 10% -5% -5% -5%;
+  background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--red) 18%, transparent), transparent 65%);
+  z-index: -1;
 }
 .hero-badges {
   display: flex;
@@ -553,7 +580,10 @@ code {
   .sobre-grid,
   .backend-grid,
   .contato-grid,
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid,
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-img { order: -1; }
+  .hero-img img { max-width: 220px; }
   .sobre-foto-wrap { max-width: 260px; }
   .stats, .contrib-grid { grid-template-columns: repeat(2, 1fr); }
 }
