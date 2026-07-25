@@ -86,6 +86,20 @@ Fontes de dados, em ordem de prioridade:
 1. `data/stats.json` (gerado pelo workflow diário — dado oficial via GraphQL);
 2. fallback: API pública `github-contributions-api.jogruber.de`.
 
+### Botão "Atualizar agora"
+
+Ao lado da data de atualização há um botão que rebusca **projetos e
+contribuições direto das APIs**, sem esperar o workflow das 12:34. Útil
+depois de adicionar o topic `portifolio` num repositório novo ou de dar
+commits no mesmo dia.
+
+- Nas contribuições, ele pula o snapshot diário e vai direto na API ao vivo;
+  a legenda muda para *"dados ao vivo, buscados agora"*.
+- Se a busca falhar (rede fora ou limite de requisições do GitHub), o botão
+  avisa e **mantém os dados que já estavam na tela** — nunca troca dado bom
+  por cache velho.
+- O filtro de categoria selecionado é preservado.
+
 ## 🌍 Idiomas (PT · EN · ES)
 
 O site inteiro troca de idioma pelo seletor no menu, sem recarregar a página.

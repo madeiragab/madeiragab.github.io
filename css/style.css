@@ -353,11 +353,36 @@ code {
   gap: 1rem;
   margin-top: 2rem;
 }
-.contrib-updated {
+.contrib-rodape {
   margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.contrib-updated {
   color: var(--text-dim);
   font-size: .72rem;
 }
+.btn-refresh {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: .4rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color .2s, color .2s, opacity .2s;
+}
+.btn-refresh:hover:not(:disabled) { border-color: var(--red); color: var(--red); }
+.btn-refresh:disabled { opacity: .6; cursor: default; }
+.btn-refresh.girando { border-color: var(--red); color: var(--red); }
+.btn-refresh.ok { border-color: var(--red); color: var(--red); }
+.btn-refresh.erro { border-color: var(--text-dim); color: var(--text-dim); }
 
 /* ============ PROJETOS ============ */
 .filtros {
