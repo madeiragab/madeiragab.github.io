@@ -12,23 +12,23 @@
       "portifolio",
       "python"
     ],
-    "stargazers_count": 1,
-    "updated_at": "2026-07-24T18:30:57Z"
+    "stargazers_count": 2,
+    "updated_at": "2026-07-25T02:52:25Z"
   },
   {
-    "name": "Guns-and-boots",
-    "description": "Jogo 2D retro-futurista por turnos, com maquina de estados, sistema de save e modo mobile.",
-    "html_url": "https://github.com/madeiragab/Guns-and-boots",
+    "name": "darkos-ga36-port",
+    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
+    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
     "homepage": null,
-    "language": "Python",
+    "language": null,
     "topics": [
-      "game",
+      "hardware",
+      "linux",
       "portifolio",
-      "pygame",
-      "python"
+      "reverse-engineering"
     ],
-    "stargazers_count": 1,
-    "updated_at": "2026-07-24T18:31:09Z"
+    "stargazers_count": 3,
+    "updated_at": "2026-07-25T02:52:26Z"
   },
   {
     "name": "social-network",
@@ -43,23 +43,8 @@
       "portifolio",
       "postgresql"
     ],
-    "stargazers_count": 1,
-    "updated_at": "2026-07-24T18:30:55Z"
-  },
-  {
-    "name": "darkos-ga36-port",
-    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
-    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
-    "homepage": null,
-    "language": null,
-    "topics": [
-      "hardware",
-      "linux",
-      "portifolio",
-      "reverse-engineering"
-    ],
     "stargazers_count": 2,
-    "updated_at": "2026-07-24T18:31:10Z"
+    "updated_at": "2026-07-25T02:52:27Z"
   },
   {
     "name": "rpg-panel",
@@ -74,7 +59,22 @@
       "python",
       "web"
     ],
-    "stargazers_count": 0,
-    "updated_at": "2026-07-24T18:30:56Z"
+    "stargazers_count": 1,
+    "updated_at": "2026-07-25T02:58:12Z"
+  },
+  {
+    "name": "Guns-and-boots",
+    "description": "Jogo 2D retro-futurista por turnos, com maquina de estados, sistema de save e modo mobile.",
+    "html_url": "https://github.com/madeiragab/Guns-and-boots",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "game",
+      "portifolio",
+      "pygame",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-07-25T02:52:25Z"
   }
 ]
