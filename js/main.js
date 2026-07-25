@@ -83,15 +83,26 @@ const projCount = document.getElementById('projCount');
 let projetos = [];
 let categoriaAtiva = null;   // null = todos
 
-async function carregarProjetos() {
+/** Busca os projetos. Com aoVivo=true ignora qualquer cache e exige
+    resposta da API do GitHub (usado pelo botão "Atualizar agora"). */
+async function carregarProjetos(aoVivo = false) {
+  let ok = false;
   try {
     const url = `https://api.github.com/search/repositories?q=user:${GH_USER}+topic:${GH_TOPIC}&sort=updated&per_page=100`;
-    const res = await fetch(url, { headers: { Accept: 'application/vnd.github+json' } });
+    const res = await fetch(url, {
+      headers: { Accept: 'application/vnd.github+json' },
+      cache: 'no-store',
+    });
     if (!res.ok) throw new Error(`API ${res.status}`);
     const data = await res.json();
     if (!data.items || data.items.length === 0) throw new Error('sem repositórios com o topic');
     projetos = data.items.map(normalizarRepo);
+    ok = true;
   } catch (e) {
+    /* Num refresh manual, falhou é falhou: mantém o que já está na tela
+       em vez de substituir dados bons por cache velho. */
+    if (aoVivo) return false;
+
     /* Plano B: cache gerado pelo workflow diário */
     try {
       const res = await fetch('data/projects.json');
@@ -102,11 +113,13 @@ async function carregarProjetos() {
       projetos = PROJETOS_FALLBACK;
     }
   }
+
   renderFiltros();
-  renderProjetos(null);
+  renderProjetos(categoriaAtiva);
   const stat = document.getElementById('statProjects');
   if (stat) stat.textContent = projetos.length;
   projCount.textContent = i18n.t('proj.count', { n: projetos.length });
+  return ok;
 }
 
 function normalizarRepo(repo) {
@@ -175,34 +188,47 @@ function esc(s) {
 
 /* ============ CONTRIBUIÇÕES ============ */
 let contribAtualizadoEm = null;
+let contribAoVivo = false;
 
-async function carregarContribuicoes() {
+/** Busca as contribuições. Com aoVivo=true pula o snapshot diário
+    (data/stats.json) e vai direto na API pública, trazendo os números
+    do momento em vez dos das 12:34. */
+async function carregarContribuicoes(aoVivo = false) {
   let dias = null;
 
   /* Fonte 1: stats.json gerado diariamente pelo GitHub Actions */
-  try {
-    const res = await fetch('data/stats.json');
-    if (res.ok) {
-      const stats = await res.json();
-      dias = stats.days;
-      contribAtualizadoEm = stats.updated_at;
-    }
-  } catch { /* segue pro fallback */ }
+  if (!aoVivo) {
+    try {
+      const res = await fetch('data/stats.json');
+      if (res.ok) {
+        const stats = await res.json();
+        dias = stats.days;
+        contribAtualizadoEm = stats.updated_at;
+        contribAoVivo = false;
+      }
+    } catch { /* segue pro fallback */ }
+  }
 
-  /* Fonte 2: API pública de contribuições */
+  /* Fonte 2: API pública de contribuições (sempre ao vivo) */
   if (!dias) {
     try {
-      const res = await fetch(`https://github-contributions-api.jogruber.de/v4/${GH_USER}?y=last`);
+      const res = await fetch(
+        `https://github-contributions-api.jogruber.de/v4/${GH_USER}?y=last`,
+        { cache: 'no-store' }
+      );
       if (res.ok) {
         const data = await res.json();
         dias = data.contributions.map(c => ({ date: c.date, count: c.count }));
+        contribAtualizadoEm = new Date().toISOString();
+        contribAoVivo = true;
       }
     } catch { /* sem dados */ }
   }
 
   if (!dias || dias.length === 0) {
+    if (aoVivo) return false;   // mantém os números que já estão na tela
     document.getElementById('contribUpdated').textContent = i18n.t('contrib.erro');
-    return;
+    return false;
   }
 
   const hojeStr = new Date().toISOString().slice(0, 10);
@@ -229,6 +255,7 @@ async function carregarContribuicoes() {
   animaNumero('cStreak', streak);
 
   renderContribAtualizado();
+  return true;
 }
 
 function renderContribAtualizado() {
@@ -236,10 +263,51 @@ function renderContribAtualizado() {
   if (!el || !contribAtualizadoEm) return;
   const loc = LOCALES[i18n.idioma] || 'pt-BR';
   const d = new Date(contribAtualizadoEm);
-  el.textContent = i18n.t('contrib.atualizado', {
-    data: d.toLocaleDateString(loc),
-    hora: d.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit' }),
-  });
+  const hora = d.toLocaleTimeString(loc, { hour: '2-digit', minute: '2-digit' });
+  el.textContent = contribAoVivo
+    ? i18n.t('contrib.agora', { hora })
+    : i18n.t('contrib.atualizado', { data: d.toLocaleDateString(loc), hora });
+}
+
+/* ============ BOTÃO "ATUALIZAR AGORA" ============
+   Rebusca projetos e contribuições direto das APIs, sem esperar o
+   workflow diário das 12:34. */
+const btnAtualizar = document.getElementById('btnAtualizar');
+
+btnAtualizar.addEventListener('click', async () => {
+  estadoBotao('carregando');
+
+  const [projOk, contribOk] = await Promise.all([
+    carregarProjetos(true),
+    carregarContribuicoes(true),
+  ]);
+
+  estadoBotao(projOk || contribOk ? 'ok' : 'erro');
+  setTimeout(() => estadoBotao('idle'), 3000);
+});
+
+function estadoBotao(estado) {
+  btnAtualizar.classList.remove('girando', 'ok', 'erro');
+  if (estado === 'idle') {
+    btnAtualizar.dataset.i18n = 'atualizar.btn';
+    btnAtualizar.textContent = i18n.t('atualizar.btn');
+    btnAtualizar.disabled = false;
+    return;
+  }
+  /* enquanto mostra um estado temporário, tira o data-i18n para a
+     troca de idioma não sobrescrever a mensagem */
+  btnAtualizar.removeAttribute('data-i18n');
+  btnAtualizar.disabled = true;
+  if (estado === 'carregando') {
+    btnAtualizar.classList.add('girando');
+    btnAtualizar.textContent = i18n.t('atualizar.carregando');
+  } else if (estado === 'ok') {
+    btnAtualizar.classList.add('ok');
+    btnAtualizar.textContent = i18n.t('atualizar.ok');
+  } else {
+    btnAtualizar.classList.add('erro');
+    btnAtualizar.textContent = i18n.t('atualizar.erro');
+  }
 }
 
 function animaNumero(id, alvo) {
