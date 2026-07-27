@@ -1,19 +1,25 @@
 [
   {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": null,
-    "language": "GDScript",
+    "name": "geicis-ponto",
+    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
+    "html_url": "https://github.com/madeiragab/geicis-ponto",
+    "homepage": "",
+    "language": "Python",
     "topics": [
-      "ai",
-      "gdscript",
-      "godot",
+      "backend",
+      "django",
+      "jwt-authentication",
       "portifolio",
-      "python"
+      "python",
+      "react",
+      "rest-api",
+      "restframework",
+      "sqlite",
+      "tailwind",
+      "vite"
     ],
-    "stargazers_count": 4,
-    "updated_at": "2026-07-26T15:58:03Z"
+    "stargazers_count": 1,
+    "updated_at": "2026-07-27T01:30:52Z"
   },
   {
     "name": "darkos-ga36-port",
@@ -28,7 +34,23 @@
       "reverse-engineering"
     ],
     "stargazers_count": 3,
-    "updated_at": "2026-07-25T02:52:26Z"
+    "updated_at": "2026-07-26T19:54:27Z"
+  },
+  {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": null,
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 4,
+    "updated_at": "2026-07-26T15:58:03Z"
   },
   {
     "name": "social-network",
