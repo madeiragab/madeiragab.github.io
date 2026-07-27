@@ -1,3 +1,5 @@
+> 🇧🇷 **Português** · 🇬🇧 [English](README.en.md)
+
 # Darosa.dev — Portfólio de Gabriel Madeira
 
 > Portfólio pessoal em **preto, vermelho e branco**, com projetos carregados

@@ -1,3 +1,5 @@
+> 🇧🇷 **Português** · 🇬🇧 [English](adicionar-projetos.en.md)
+
 # Como adicionar (ou remover) um projeto do portfólio
 
 O site https://madeiragab.github.io lista **todos os repositórios públicos do
