@@ -1,5 +1,33 @@
 [
   {
+    "name": "rastro",
+    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
+    "html_url": "https://github.com/madeiragab/rastro",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "agtech",
+      "cattle-tracking",
+      "docker",
+      "fastapi",
+      "geofencing",
+      "iot",
+      "leaflet",
+      "livestock",
+      "mobile",
+      "portifolio",
+      "postgis",
+      "postgresql",
+      "precision-livestock-farming",
+      "python",
+      "react",
+      "security",
+      "typescript"
+    ],
+    "stargazers_count": 0,
+    "updated_at": "2026-08-04T16:02:50Z"
+  },
+  {
     "name": "ascensao-dos-semideuses",
     "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
     "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
