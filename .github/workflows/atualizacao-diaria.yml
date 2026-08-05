@@ -24,13 +24,17 @@ jobs:
           GH_USER: madeiragab
 
       - name: Commitar e publicar a atualização
+        # Autoria é do bot, não minha. Este commit é o Actions regravando dois
+        # JSON sozinho — assiná-lo com o meu nome e o meu e-mail enchia o meu
+        # gráfico de contribuições de atividade que eu não fiz, e ainda
+        # empurrava o trabalho de verdade para baixo do ruído diário.
         run: |
-          git config user.name "Gabriel Madeira"
-          git config user.email "gabrielmadeira1504@gmail.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           if git diff --cached --quiet; then
             echo "Nada mudou hoje — nenhum commit necessário."
           else
-            git commit -m "chore: atualização diária de contribuições e projetos ($(date -u +%Y-%m-%d))"
+            git commit -m "chore(bot): regrava o snapshot de contribuições e projetos ($(date -u +%Y-%m-%d))"
             git push
           fi
