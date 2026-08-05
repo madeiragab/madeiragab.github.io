@@ -1,5 +1,96 @@
 [
   {
+    "name": "social-network",
+    "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
+    "html_url": "https://github.com/madeiragab/social-network",
+    "homepage": null,
+    "language": "JavaScript",
+    "topics": [
+      "backend",
+      "django",
+      "django-rest-framework",
+      "portifolio",
+      "postgresql"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-08-05T16:32:18Z"
+  },
+  {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": null,
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-08-05T16:30:50Z"
+  },
+  {
+    "name": "rpg-panel",
+    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
+    "html_url": "https://github.com/madeiragab/rpg-panel",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "django",
+      "javascript",
+      "portifolio",
+      "python",
+      "web"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-08-05T16:30:50Z"
+  },
+  {
+    "name": "geicis-ponto",
+    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
+    "html_url": "https://github.com/madeiragab/geicis-ponto",
+    "homepage": "",
+    "language": "Python",
+    "topics": [
+      "backend",
+      "django",
+      "jwt-authentication",
+      "portifolio",
+      "python",
+      "react",
+      "rest-api",
+      "restframework",
+      "sqlite",
+      "tailwind",
+      "vite"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-08-05T16:30:26Z"
+  },
+  {
+    "name": "ascensao-dos-semideuses",
+    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
+    "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
+    "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
+    "language": "HTML",
+    "topics": [
+      "balancing",
+      "game-design",
+      "greek-mythology",
+      "jogo-de-mesa",
+      "portifolio",
+      "python",
+      "rpg",
+      "simulation",
+      "tabletop-rpg",
+      "ttrpg"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-08-05T16:28:57Z"
+  },
+  {
     "name": "rastro",
     "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
     "html_url": "https://github.com/madeiragab/rastro",
@@ -24,61 +115,8 @@
       "security",
       "typescript"
     ],
-    "stargazers_count": 0,
-    "updated_at": "2026-08-04T16:02:50Z"
-  },
-  {
-    "name": "ascensao-dos-semideuses",
-    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
-    "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
-    "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
-    "language": "HTML",
-    "topics": [
-      "balancing",
-      "game-design",
-      "greek-mythology",
-      "jogo-de-mesa",
-      "portifolio",
-      "python",
-      "rpg",
-      "simulation",
-      "tabletop-rpg",
-      "ttrpg"
-    ],
     "stargazers_count": 1,
-    "updated_at": "2026-08-02T20:06:22Z"
-  },
-  {
-    "name": "social-network",
-    "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
-    "html_url": "https://github.com/madeiragab/social-network",
-    "homepage": null,
-    "language": "JavaScript",
-    "topics": [
-      "backend",
-      "django",
-      "django-rest-framework",
-      "portifolio",
-      "postgresql"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-07-27T01:42:28Z"
-  },
-  {
-    "name": "rpg-panel",
-    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
-    "html_url": "https://github.com/madeiragab/rpg-panel",
-    "homepage": null,
-    "language": "Python",
-    "topics": [
-      "django",
-      "javascript",
-      "portifolio",
-      "python",
-      "web"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-07-27T01:39:36Z"
+    "updated_at": "2026-08-05T16:27:45Z"
   },
   {
     "name": "Guns-and-boots",
@@ -96,28 +134,6 @@
     "updated_at": "2026-07-27T01:34:53Z"
   },
   {
-    "name": "geicis-ponto",
-    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
-    "html_url": "https://github.com/madeiragab/geicis-ponto",
-    "homepage": "",
-    "language": "Python",
-    "topics": [
-      "backend",
-      "django",
-      "jwt-authentication",
-      "portifolio",
-      "python",
-      "react",
-      "rest-api",
-      "restframework",
-      "sqlite",
-      "tailwind",
-      "vite"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-07-27T01:30:52Z"
-  },
-  {
     "name": "darkos-ga36-port",
     "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
     "html_url": "https://github.com/madeiragab/darkos-ga36-port",
@@ -131,21 +147,5 @@
     ],
     "stargazers_count": 3,
     "updated_at": "2026-07-26T19:54:27Z"
-  },
-  {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": null,
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-07-30T12:29:51Z"
   }
 ]
