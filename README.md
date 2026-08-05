@@ -70,11 +70,9 @@ Arquivo: [`.github/workflows/atualizacao-diaria.yml`](.github/workflows/atualiza
   - busca o calendário de contribuições via **API GraphQL** do GitHub;
   - busca os repositórios com topic `portifolio` via **API REST**;
   - grava `data/stats.json` e `data/projects.json`.
-- Commita as mudanças na branch `main` **com autoria de Gabriel Madeira**
-  — commits na branch padrão com o seu e-mail contam no gráfico de
-  contribuições, então a atualização diária também mantém o gráfico ativo.
-  (PRs abertas por bot **não** contam como contribuição sua — por isso o
-  workflow commita direto na `main` em vez de abrir PR.)
+- Commita `data/stats.json` e `data/projects.json` na branch `main`. Só isso:
+  o snapshot que a página lê quando a API do GitHub está limitando o
+  navegador do visitante.
 - Também pode ser executado manualmente: aba **Actions → Atualização diária
   do portfólio → Run workflow**.
 
