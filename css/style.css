@@ -502,7 +502,21 @@ code {
   color: var(--text);
 }
 .backend-info h3:first-child { margin-top: 0; }
-.backend-info p { font-size: .86rem; color: var(--text-dim); }
+.backend-info p { font-size: .86rem; color: var(--text-dim); line-height: 1.7; }
+.backend-info p + p { margin-top: .9rem; }
+.backend-info a { color: var(--red); text-decoration: none; border-bottom: 1px solid transparent; }
+.backend-info a:hover { border-bottom-color: var(--red); }
+.backend-info code {
+  font-size: .78rem;
+  color: var(--text);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: .05rem .3rem;
+}
+/* Os dois primeiros são os sistemas atuais; este é o histórico. Fica menor
+   de propósito, para o olho parar nos de cima. */
+.backend-info .be-outros { font-size: .8rem; padding-top: .9rem; border-top: 1px solid var(--border); }
 
 /* ============ STACK / SKILLS ============ */
 .skills-grid {

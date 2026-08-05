@@ -190,7 +190,7 @@
             <p><span class="t-prompt">gabriel@lab:~$</span> cat foco.txt</p>
             <p class="t-out" data-i18n="be.foco">modelagem de domínio, APIs REST, PostgreSQL e docs</p>
             <p><span class="t-prompt">gabriel@lab:~$</span> ls ferramentas/</p>
-            <p class="t-out">django drf postgres docker git uml</p>
+            <p class="t-out">django drf fastapi postgis docker git uml</p>
             <p><span class="t-prompt">gabriel@lab:~$</span> <span class="cursor">_</span></p>
           </div>
         </div>
@@ -199,15 +199,29 @@
           <div class="chips">
             <span class="chip">Django</span>
             <span class="chip">Django REST Framework</span>
+            <span class="chip">FastAPI</span>
             <span class="chip">PostgreSQL</span>
-            <span class="chip">SQLite</span>
+            <span class="chip">PostGIS</span>
+            <span class="chip">Docker</span>
             <span class="chip">UML</span>
           </div>
           <h3 data-i18n="be.projetosTitulo">PROJETOS BACKEND</h3>
           <p data-i18n-html="be.projetos">
-            <strong class="red">Social Network</strong> (backend-first, domínio modelado em UML antes do código) e
-            <strong class="red">RPG Panel</strong> (painel Django com controle de acesso por papéis) nasceram
-            desse interesse — sistemas onde a regra de negócio mora no servidor, documentada e testável.
+            <a href="https://github.com/madeiragab/rastro"><strong class="red">Rastro</strong></a> — FastAPI e PostGIS.
+            A geocerca é <code>ST_Contains</code> mais distância em <code>geography</code>: a regra roda no banco,
+            e o CI a testa contra PostGIS de verdade a cada push, junto com as 124 asserções de autenticação
+            Argon2id e rotação de refresh token.
+          </p>
+          <p data-i18n-html="be.projetos2">
+            <a href="https://github.com/madeiragab/geicis-ponto"><strong class="red">GEICIS Ponto</strong></a> — Django e DRF.
+            Domínio e contrato da API fechados em <code>docs/</code> antes da primeira linha de código; as horas
+            são agregação SQL, não laço em Python. 58 testes no CI, mais a checagem de que nenhum modelo ficou
+            sem migração.
+          </p>
+          <p class="be-outros" data-i18n-html="be.projetos3">
+            Antes deles vieram <a href="https://github.com/madeiragab/social-network">Social Network</a>
+            (domínio em UML antes do código, regras garantidas por constraint no banco) e
+            <a href="https://github.com/madeiragab/rpg-panel">RPG Panel</a> (controle de acesso por papéis).
           </p>
         </div>
       </div>
