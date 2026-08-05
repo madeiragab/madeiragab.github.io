@@ -64,7 +64,7 @@ File: [`.github/workflows/atualizacao-diaria.yml`](.github/workflows/atualizacao
   - fetches the contribution calendar via GitHub's **GraphQL API**;
   - fetches the repositories with the `portifolio` topic via the **REST API**;
   - writes `data/stats.json` and `data/projects.json`.
-- Commits the changes to the `main` branch **authored by Gabriel Madeira** — commits on the default branch with your e-mail count toward the contribution graph, so the daily refresh also keeps the graph active. (PRs opened by a bot do **not** count as your contribution — which is why the workflow commits straight to `main` instead of opening a PR.)
+- Commits `data/stats.json` and `data/projects.json` to the `main` branch. That's all it is: the snapshot the page reads when GitHub's API is rate-limiting the visitor's browser.
 - It can also be triggered manually: **Actions → Atualização diária do portfólio → Run workflow**.
 
 ## 📊 The "Contributions in numbers" section
