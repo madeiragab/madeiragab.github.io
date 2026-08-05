@@ -95,7 +95,9 @@ const TEXTOS = {
     'be.foco': 'modelagem de domínio, APIs REST, PostgreSQL e docs',
     'be.ferramentas': 'FERRAMENTAS',
     'be.projetosTitulo': 'PROJETOS BACKEND',
-    'be.projetos': '<strong class="red">Social Network</strong> (backend-first, domínio modelado em UML antes do código) e <strong class="red">RPG Panel</strong> (painel Django com controle de acesso por papéis) nasceram desse interesse — sistemas onde a regra de negócio mora no servidor, documentada e testável.',
+    'be.projetos': '<a href="https://github.com/madeiragab/rastro"><strong class="red">Rastro</strong></a> — FastAPI e PostGIS. A geocerca é <code>ST_Contains</code> mais distância em <code>geography</code>: a regra roda no banco, e o CI a testa contra PostGIS de verdade a cada push, junto com as 124 asserções de autenticação Argon2id e rotação de refresh token.',
+    'be.projetos2': '<a href="https://github.com/madeiragab/geicis-ponto"><strong class="red">GEICIS Ponto</strong></a> — Django e DRF. Domínio e contrato da API fechados em <code>docs/</code> antes da primeira linha de código; as horas são agregação SQL, não laço em Python. 58 testes no CI, mais a checagem de que nenhum modelo ficou sem migração.',
+    'be.projetos3': 'Antes deles vieram <a href="https://github.com/madeiragab/social-network">Social Network</a> (domínio em UML antes do código, regras garantidas por constraint no banco) e <a href="https://github.com/madeiragab/rpg-panel">RPG Panel</a> (controle de acesso por papéis).',
 
     'stack.eyebrow': '/* stack que uso */ <span class="red">linguagens, ferramentas e infra</span>',
     'stack.titulo': 'AS TECNOLOGIAS POR TRÁS DOS MEUS PROJETOS.',
@@ -220,7 +222,9 @@ const TEXTOS = {
     'be.foco': 'domain modeling, REST APIs, PostgreSQL and docs',
     'be.ferramentas': 'TOOLS',
     'be.projetosTitulo': 'BACKEND PROJECTS',
-    'be.projetos': '<strong class="red">Social Network</strong> (backend-first, domain modeled in UML before any code) and <strong class="red">RPG Panel</strong> (a Django panel with role-based access control) came out of this interest — systems where the business rules live on the server, documented and testable.',
+    'be.projetos': '<a href="https://github.com/madeiragab/rastro"><strong class="red">Rastro</strong></a> — FastAPI and PostGIS. The geofence is <code>ST_Contains</code> plus distance in <code>geography</code>: the rule runs in the database, and CI tests it against real PostGIS on every push, alongside the 124 assertions covering Argon2id auth and refresh-token rotation.',
+    'be.projetos2': '<a href="https://github.com/madeiragab/geicis-ponto"><strong class="red">GEICIS Ponto</strong></a> — Django and DRF. Domain and API contract settled in <code>docs/</code> before the first line of code; hours are SQL aggregation, not a Python loop. 58 tests in CI, plus a check that no model was left without its migration.',
+    'be.projetos3': 'Before them came <a href="https://github.com/madeiragab/social-network">Social Network</a> (domain in UML before any code, rules enforced by database constraints) and <a href="https://github.com/madeiragab/rpg-panel">RPG Panel</a> (role-based access control).',
 
     'stack.eyebrow': '/* my stack */ <span class="red">languages, tools and infra</span>',
     'stack.titulo': 'THE TECHNOLOGIES BEHIND MY PROJECTS.',
@@ -345,7 +349,9 @@ const TEXTOS = {
     'be.foco': 'modelado de dominio, APIs REST, PostgreSQL y docs',
     'be.ferramentas': 'HERRAMIENTAS',
     'be.projetosTitulo': 'PROYECTOS BACKEND',
-    'be.projetos': '<strong class="red">Social Network</strong> (backend-first, dominio modelado en UML antes del código) y <strong class="red">RPG Panel</strong> (panel Django con control de acceso por roles) nacieron de ese interés — sistemas donde la regla de negocio vive en el servidor, documentada y testeable.',
+    'be.projetos': '<a href="https://github.com/madeiragab/rastro"><strong class="red">Rastro</strong></a> — FastAPI y PostGIS. La geocerca es <code>ST_Contains</code> más distancia en <code>geography</code>: la regla corre en la base, y el CI la prueba contra PostGIS de verdad en cada push, junto con las 124 aserciones de autenticación Argon2id y rotación de refresh token.',
+    'be.projetos2': '<a href="https://github.com/madeiragab/geicis-ponto"><strong class="red">GEICIS Ponto</strong></a> — Django y DRF. Dominio y contrato de la API cerrados en <code>docs/</code> antes de la primera línea de código; las horas son agregación SQL, no bucle en Python. 58 pruebas en CI, más la verificación de que ningún modelo quedó sin migración.',
+    'be.projetos3': 'Antes de ellos vinieron <a href="https://github.com/madeiragab/social-network">Social Network</a> (dominio en UML antes del código, reglas garantizadas por constraints en la base) y <a href="https://github.com/madeiragab/rpg-panel">RPG Panel</a> (control de acceso por roles).',
 
     'stack.eyebrow': '/* mi stack */ <span class="red">lenguajes, herramientas e infra</span>',
     'stack.titulo': 'LAS TECNOLOGÍAS DETRÁS DE MIS PROYECTOS.',
