@@ -219,15 +219,42 @@
       <h2 class="section-title" data-i18n="stack.titulo">AS TECNOLOGIAS POR TRÁS DOS MEUS PROJETOS.</h2>
       <p class="section-desc" data-i18n="stack.desc">De linguagens a banco de dados — o que uso no dia a dia pra construir, documentar e colocar no ar.</p>
 
+      <!-- Sem barra de percentual: "Python 88%" é um número que ninguém pode
+           conferir e que todo portfólio de curso tem. Cada item aqui aponta
+           para o repositório onde a tecnologia está sendo usada de fato. -->
       <div class="skills-grid">
-        <div class="skill" data-nivel="88"><span class="skill-nome">▸ Python</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">88%</span></div>
-        <div class="skill" data-nivel="82"><span class="skill-nome">▸ Django</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">82%</span></div>
-        <div class="skill" data-nivel="78"><span class="skill-nome">▸ PostgreSQL / SQL</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">78%</span></div>
-        <div class="skill" data-nivel="75"><span class="skill-nome" data-i18n="skill.apis">▸ APIs REST</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">75%</span></div>
-        <div class="skill" data-nivel="72"><span class="skill-nome">▸ JavaScript</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">72%</span></div>
-        <div class="skill" data-nivel="70"><span class="skill-nome">▸ HTML / CSS</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">70%</span></div>
-        <div class="skill" data-nivel="68"><span class="skill-nome">▸ Godot / GDScript</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">68%</span></div>
-        <div class="skill" data-nivel="65"><span class="skill-nome" data-i18n="skill.hardware">▸ Linux / Hardware</span><div class="skill-bar"><div class="skill-fill"></div></div><span class="skill-pct">65%</span></div>
+        <div class="skill">
+          <span class="skill-nome">▸ Python</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.python">Backend do <a href="https://github.com/madeiragab/rastro">Rastro</a> (FastAPI) e do <a href="https://github.com/madeiragab/geicis-ponto">GEICIS Ponto</a> (Django); simulador do <a href="https://github.com/madeiragab/tcc-simulador-ia">TCC</a>, com +14.000 partidas medidas.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome">▸ Django / DRF</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.django"><a href="https://github.com/madeiragab/geicis-ponto">GEICIS Ponto</a> — 58 testes no CI — e <a href="https://github.com/madeiragab/social-network">Social Network</a>, com o domínio modelado em UML antes do código.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome">▸ PostgreSQL / PostGIS</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.postgres">A geocerca do <a href="https://github.com/madeiragab/rastro">Rastro</a> é <code>ST_Contains</code> mais distância em <code>geography</code>: a regra roda no banco, e o CI testa contra PostGIS de verdade.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome" data-i18n="skill.apis">▸ APIs REST</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.apis">Contrato fechado em <code>docs/</code> antes do código nos dois sistemas; autenticação com Argon2id e rotação de refresh token no <a href="https://github.com/madeiragab/rastro">Rastro</a>.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome">▸ Docker</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.docker"><a href="https://github.com/madeiragab/rastro">Rastro</a> sobe inteiro com <code>docker compose up</code>; o CI ainda constrói as imagens de produção a cada push.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome">▸ JavaScript / TypeScript</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.js">Front mobile-first do <a href="https://github.com/madeiragab/rastro">Rastro</a> em TypeScript; React no <a href="https://github.com/madeiragab/geicis-ponto">GEICIS Ponto</a>; este site é JS puro, sem framework.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome">▸ Godot / GDScript</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.godot">Ambiente de simulação do <a href="https://github.com/madeiragab/tcc-simulador-ia">TCC</a>, onde os agentes de IA jogam e são medidos.</span>
+        </div>
+        <div class="skill">
+          <span class="skill-nome" data-i18n="skill.hardware">▸ Linux / Hardware</span>
+          <span class="skill-onde" data-i18n-html="skill.onde.hardware">Autópsia do <a href="https://github.com/madeiragab/darkos-ga36-port">GA36-MB</a>: console clone que mente sobre o próprio hardware, documentado por porta serial.</span>
+        </div>
       </div>
 
       <div class="chips chips-center">

@@ -328,17 +328,8 @@ function animaNumero(id, alvo) {
   setTimeout(() => { if (!terminou) el.textContent = alvo; }, dur + 300);
 }
 
-/* ============ SKILL BARS (anima ao aparecer) ============ */
-const skillObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const fill = e.target.querySelector('.skill-fill');
-      fill.style.width = e.target.dataset.nivel + '%';
-      skillObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.4 });
-document.querySelectorAll('.skill').forEach(s => skillObserver.observe(s));
+/* As barras de percentual saíram: os itens de stack agora são texto com link
+   para o repositório, e não precisam de animação nem de observer. */
 
 /* ============ REVEAL DAS SEÇÕES ============ */
 const revealObserver = new IntersectionObserver(entries => {

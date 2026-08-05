@@ -512,28 +512,33 @@ code {
   margin-top: 2rem;
 }
 .skill {
-  display: grid;
-  grid-template-columns: 170px 1fr 44px;
-  align-items: center;
-  gap: .8rem;
+  border-left: 2px solid var(--border);
+  padding-left: 1rem;
   font-size: .8rem;
 }
-.skill-nome { color: var(--text); }
-.skill-bar {
-  height: 8px;
+.skill:hover { border-left-color: var(--red); }
+.skill-nome {
+  display: block;
+  color: var(--text);
+  font-weight: 600;
+  margin-bottom: .35rem;
+}
+.skill-onde {
+  display: block;
+  color: var(--text-dim);
+  font-size: .76rem;
+  line-height: 1.6;
+}
+.skill-onde a { color: var(--red); text-decoration: none; border-bottom: 1px solid transparent; }
+.skill-onde a:hover { border-bottom-color: var(--red); }
+.skill-onde code {
+  font-size: .72rem;
+  color: var(--text);
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 999px;
-  overflow: hidden;
+  border-radius: 4px;
+  padding: .05rem .3rem;
 }
-.skill-fill {
-  height: 100%;
-  width: 0;
-  background: linear-gradient(90deg, var(--red-dark), var(--red));
-  border-radius: 999px;
-  transition: width 1.2s cubic-bezier(.2,.8,.2,1);
-}
-.skill-pct { color: var(--text-dim); font-size: .72rem; text-align: right; }
 
 /* ============ JORNADA / TIMELINE ============ */
 .timeline {
