@@ -1,5 +1,33 @@
 [
   {
+    "name": "rastro",
+    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
+    "html_url": "https://github.com/madeiragab/rastro",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "agtech",
+      "cattle-tracking",
+      "docker",
+      "fastapi",
+      "geofencing",
+      "iot",
+      "leaflet",
+      "livestock",
+      "mobile",
+      "portifolio",
+      "postgis",
+      "postgresql",
+      "precision-livestock-farming",
+      "python",
+      "react",
+      "security",
+      "typescript"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-08-11T23:41:46Z"
+  },
+  {
     "name": "social-network",
     "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
     "html_url": "https://github.com/madeiragab/social-network",
@@ -89,34 +117,6 @@
     ],
     "stargazers_count": 1,
     "updated_at": "2026-08-05T16:28:57Z"
-  },
-  {
-    "name": "rastro",
-    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
-    "html_url": "https://github.com/madeiragab/rastro",
-    "homepage": null,
-    "language": "Python",
-    "topics": [
-      "agtech",
-      "cattle-tracking",
-      "docker",
-      "fastapi",
-      "geofencing",
-      "iot",
-      "leaflet",
-      "livestock",
-      "mobile",
-      "portifolio",
-      "postgis",
-      "postgresql",
-      "precision-livestock-farming",
-      "python",
-      "react",
-      "security",
-      "typescript"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-08-05T16:27:45Z"
   },
   {
     "name": "Guns-and-boots",
