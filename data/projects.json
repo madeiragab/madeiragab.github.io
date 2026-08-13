@@ -1,5 +1,20 @@
 [
   {
+    "name": "darkos-ga36-port",
+    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
+    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "hardware",
+      "linux",
+      "portifolio",
+      "reverse-engineering"
+    ],
+    "stargazers_count": 3,
+    "updated_at": "2026-08-13T07:32:05Z"
+  },
+  {
     "name": "rastro",
     "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
     "html_url": "https://github.com/madeiragab/rastro",
@@ -132,20 +147,5 @@
     ],
     "stargazers_count": 2,
     "updated_at": "2026-07-27T01:34:53Z"
-  },
-  {
-    "name": "darkos-ga36-port",
-    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
-    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
-    "homepage": null,
-    "language": null,
-    "topics": [
-      "hardware",
-      "linux",
-      "portifolio",
-      "reverse-engineering"
-    ],
-    "stargazers_count": 3,
-    "updated_at": "2026-07-26T19:54:27Z"
   }
 ]
