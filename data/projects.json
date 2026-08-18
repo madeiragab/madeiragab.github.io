@@ -1,5 +1,21 @@
 [
   {
+    "name": "rpg-panel",
+    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
+    "html_url": "https://github.com/madeiragab/rpg-panel",
+    "homepage": null,
+    "language": "Python",
+    "topics": [
+      "django",
+      "javascript",
+      "portifolio",
+      "python",
+      "web"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-08-18T15:21:58Z"
+  },
+  {
     "name": "ascensao-dos-semideuses",
     "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
     "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
@@ -18,7 +34,7 @@
       "ttrpg"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-08-17T10:52:40Z"
+    "updated_at": "2026-08-18T06:53:35Z"
   },
   {
     "name": "darkos-ga36-port",
@@ -91,22 +107,6 @@
       "godot",
       "portifolio",
       "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-08-05T16:30:50Z"
-  },
-  {
-    "name": "rpg-panel",
-    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
-    "html_url": "https://github.com/madeiragab/rpg-panel",
-    "homepage": null,
-    "language": "Python",
-    "topics": [
-      "django",
-      "javascript",
-      "portifolio",
-      "python",
-      "web"
     ],
     "stargazers_count": 2,
     "updated_at": "2026-08-05T16:30:50Z"
