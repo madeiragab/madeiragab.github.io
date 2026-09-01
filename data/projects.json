@@ -1,5 +1,21 @@
 [
   {
+    "name": "lastro",
+    "description": "Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com crash recovery, parser SQL e MVCC.",
+    "html_url": "https://github.com/madeiragab/lastro",
+    "homepage": null,
+    "language": "Rust",
+    "topics": [
+      "database",
+      "portifolio",
+      "rust",
+      "storage-engine",
+      "systems-programming"
+    ],
+    "stargazers_count": 0,
+    "updated_at": "2026-09-01T18:23:52Z"
+  },
+  {
     "name": "ascensao-dos-semideuses",
     "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
     "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
@@ -18,7 +34,7 @@
       "ttrpg"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-08-31T13:27:27Z"
+    "updated_at": "2026-09-01T02:36:23Z"
   },
   {
     "name": "rpg-panel",
