@@ -29,6 +29,7 @@ const TEXTOS = {
     'nav.jornada': 'JORNADA',
     'nav.contato': 'CONTATO',
     'nav.curriculo': 'CURRÍCULO',
+    'hero.ctaCurriculo': '▤ CURRÍCULO',
     'contato.curriculo': '▤ currículo (1 página, pronto para imprimir)',
     'aria.menu': 'Abrir menu',
     'aria.tema': 'Alternar tema',
@@ -163,6 +164,7 @@ const TEXTOS = {
     'nav.jornada': 'JOURNEY',
     'nav.contato': 'CONTACT',
     'nav.curriculo': 'RESUME',
+    'hero.ctaCurriculo': '▤ RESUME',
     'contato.curriculo': '▤ resume (one page, print-ready)',
     'aria.menu': 'Open menu',
     'aria.tema': 'Toggle theme',
@@ -297,6 +299,7 @@ const TEXTOS = {
     'nav.jornada': 'TRAYECTORIA',
     'nav.contato': 'CONTACTO',
     'nav.curriculo': 'CURRÍCULUM',
+    'hero.ctaCurriculo': '▤ CURRÍCULUM',
     'contato.curriculo': '▤ currículum (1 página, listo para imprimir)',
     'aria.menu': 'Abrir menú',
     'aria.tema': 'Cambiar tema',
@@ -514,6 +517,13 @@ function aplicarIdioma(lang) {
   });
   document.querySelectorAll('[data-i18n-alt]').forEach(el => {
     el.alt = t(el.dataset.i18nAlt);
+  });
+
+  // O curriculo e uma folha por idioma, e nao uma pagina traduzida por JS:
+  // ela precisa imprimir em A4 sem depender de script. O link e que segue o
+  // idioma escolhido no site.
+  document.querySelectorAll('[data-cv]').forEach(el => {
+    el.href = idiomaAtual === 'pt' ? 'curriculo.html' : 'resume.html';
   });
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
