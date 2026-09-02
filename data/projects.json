@@ -8,6 +8,7 @@
     "topics": [
       "b-tree",
       "database",
+      "destaque",
       "portifolio",
       "rust",
       "storage-engine",
@@ -16,8 +17,70 @@
       "wal",
       "webassembly"
     ],
-    "stargazers_count": 0,
-    "updated_at": "2026-09-01T18:23:52Z"
+    "stargazers_count": 1,
+    "updated_at": "2026-09-02T14:49:15Z"
+  },
+  {
+    "name": "geicis-ponto",
+    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
+    "html_url": "https://github.com/madeiragab/geicis-ponto",
+    "homepage": "https://github.com/madeiragab/geicis-ponto/tree/main/docs",
+    "language": "Python",
+    "topics": [
+      "backend",
+      "django",
+      "jwt-authentication",
+      "portifolio",
+      "python",
+      "react",
+      "rest-api",
+      "restframework",
+      "sqlite",
+      "tailwind",
+      "vite"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-09-02T13:01:01Z"
+  },
+  {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "destaque",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-09-02T12:57:02Z"
+  },
+  {
+    "name": "market-direction",
+    "description": "Next-day directional stock prediction for B3 and S&P 500, built around measuring whether the prediction is worth believing. Walk-forward, leakage audit, transaction cost, calibration. Docs in EN/PT.",
+    "html_url": "https://github.com/madeiragab/market-direction",
+    "homepage": "https://madeiragab.github.io/market-direction/",
+    "language": "Python",
+    "topics": [
+      "ai",
+      "backtesting",
+      "data-science",
+      "destaque",
+      "lightgbm",
+      "machine-learning",
+      "pandas",
+      "portifolio",
+      "python",
+      "quantitative-finance",
+      "scikit-learn",
+      "time-series"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-09-02T12:51:01Z"
   },
   {
     "name": "ascensao-dos-semideuses",
@@ -27,24 +90,23 @@
     "language": "HTML",
     "topics": [
       "balancing",
+      "game",
       "game-design",
       "greek-mythology",
-      "jogo-de-mesa",
       "portifolio",
       "python",
       "rpg",
       "simulation",
-      "tabletop-rpg",
-      "ttrpg"
+      "tabletop-rpg"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-09-01T02:36:23Z"
+    "updated_at": "2026-09-02T04:13:56Z"
   },
   {
     "name": "rpg-panel",
     "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
     "html_url": "https://github.com/madeiragab/rpg-panel",
-    "homepage": null,
+    "homepage": "https://github.com/madeiragab/rpg-panel/tree/main/docs",
     "language": "Python",
     "topics": [
       "django",
@@ -54,13 +116,13 @@
       "web"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-08-18T18:56:16Z"
+    "updated_at": "2026-09-02T12:49:12Z"
   },
   {
     "name": "darkos-ga36-port",
     "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
     "html_url": "https://github.com/madeiragab/darkos-ga36-port",
-    "homepage": null,
+    "homepage": "https://github.com/madeiragab/darkos-ga36-port/tree/main/docs",
     "language": "Python",
     "topics": [
       "hardware",
@@ -69,17 +131,18 @@
       "reverse-engineering"
     ],
     "stargazers_count": 4,
-    "updated_at": "2026-08-31T01:43:05Z"
+    "updated_at": "2026-09-02T12:49:13Z"
   },
   {
     "name": "rastro",
     "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
     "html_url": "https://github.com/madeiragab/rastro",
-    "homepage": null,
+    "homepage": "https://github.com/madeiragab/rastro/blob/main/docs/README.md",
     "language": "Python",
     "topics": [
       "agtech",
       "cattle-tracking",
+      "destaque",
       "docker",
       "fastapi",
       "geofencing",
@@ -97,13 +160,13 @@
       "typescript"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-08-11T23:41:46Z"
+    "updated_at": "2026-09-02T12:49:10Z"
   },
   {
     "name": "social-network",
     "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
     "html_url": "https://github.com/madeiragab/social-network",
-    "homepage": null,
+    "homepage": "https://github.com/madeiragab/social-network/tree/main/docs",
     "language": "JavaScript",
     "topics": [
       "backend",
@@ -113,51 +176,13 @@
       "postgresql"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-08-05T16:32:18Z"
-  },
-  {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": null,
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-08-05T16:30:50Z"
-  },
-  {
-    "name": "geicis-ponto",
-    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
-    "html_url": "https://github.com/madeiragab/geicis-ponto",
-    "homepage": "",
-    "language": "Python",
-    "topics": [
-      "backend",
-      "django",
-      "jwt-authentication",
-      "portifolio",
-      "python",
-      "react",
-      "rest-api",
-      "restframework",
-      "sqlite",
-      "tailwind",
-      "vite"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-08-05T16:30:26Z"
+    "updated_at": "2026-09-02T12:49:10Z"
   },
   {
     "name": "Guns-and-boots",
     "description": "Jogo 2D retro-futurista por turnos, com maquina de estados, sistema de save e modo mobile.",
     "html_url": "https://github.com/madeiragab/Guns-and-boots",
-    "homepage": null,
+    "homepage": "https://github.com/madeiragab/Guns-and-boots/tree/main/docs",
     "language": "Python",
     "topics": [
       "game",
@@ -166,6 +191,6 @@
       "python"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-07-27T01:34:53Z"
+    "updated_at": "2026-09-02T12:49:13Z"
   }
 ]
