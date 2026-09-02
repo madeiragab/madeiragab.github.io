@@ -451,6 +451,20 @@ code {
   border-radius: 999px;
   white-space: nowrap;
 }
+.proj-card.destaque {
+  border-color: color-mix(in srgb, var(--red) 55%, var(--border));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--red) 18%, transparent);
+}
+.proj-selo {
+  align-self: flex-start;
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: var(--bg);
+  background: var(--red);
+  padding: .22rem .6rem;
+  border-radius: 999px;
+}
 .proj-tech { color: var(--text-dim); font-size: .74rem; }
 .proj-desc { font-size: .84rem; flex: 1; }
 .proj-links { display: flex; gap: 1.2rem; }
