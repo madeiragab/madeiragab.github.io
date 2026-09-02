@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gabriel Madeira — Resume</title>
+<meta name="description" content="Gabriel Madeira — Backend Developer. Django, FastAPI, PostgreSQL, Rust. Resume." />
+<link rel="stylesheet" href="css/curriculo.css" />
+</head>
+<body class="denso">
+
+<nav class="barra-idioma">
+  <a href="curriculo.html">PT</a>
+  <a href="resume.html" aria-current="page">EN</a>
+  <a class="imprimir" href="#" onclick="window.print();return false;">print / PDF</a>
+</nav>
+
+<main class="folha">
+
+  <header>
+    <h1>Gabriel Madeira Lourenço Silva</h1>
+    <p class="cargo">Backend Developer</p>
+    <p class="contato">
+      Muzambinho, Brazil<span class="sep">•</span>+55 35 99975-4798<span class="sep">•</span><a href="mailto:gabrielmadeira1504@gmail.com">gabrielmadeira1504@gmail.com</a><br />
+      <a href="https://madeiragab.github.io">madeiragab.github.io</a><span class="sep">•</span><a href="https://github.com/madeiragab">github.com/madeiragab</a><span class="sep">•</span><a href="https://www.linkedin.com/in/gabriel-madeira-b19100209/">linkedin.com/in/gabriel-madeira-b19100209</a>
+    </p>
+  </header>
+
+  <p class="disponibilidade">
+    <strong>Availability:</strong> immediate for <strong>remote work</strong>; open to on-site or
+    hybrid roles, including relocation, from March 2027.
+  </p>
+
+  <h2>Profile</h2>
+  <p>
+    Final-year Computer Science student at IFSULDEMINAS, with hands-on experience since 2023 on
+    real projects — from requirements with end users through to post-deployment support. Focused on
+    <b>backend</b>: domain modelling, business rules on the server, REST APIs and relational
+    databases. API contract before the code; results verified by tests in CI, including when
+    unfavourable.
+  </p>
+
+  <h2>Technical skills</h2>
+  <p class="hab"><b>Backend and data:</b> Python, Django, Django REST Framework, FastAPI, Node.js, Flask · PostgreSQL, PostGIS, SQLite, MySQL · pandas, scikit-learn, LightGBM</p>
+  <p class="hab"><b>Systems and tooling:</b> Rust, Docker, GitHub Actions, Linux, Git · JavaScript, TypeScript, React, React Native, HTML/CSS, Tailwind · Godot/GDScript, PHP, WordPress, C++ (competitive programming: OLIP, regional)</p>
+
+  <h2>Experience</h2>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Intern — Computer Networks Laboratory</span> <span class="onde">| IFSULDEMINAS</span></span>
+      <span class="quando">Apr 2026 – present · Muzambinho, Brazil</span>
+    </div>
+    <ul>
+      <li>Full overhaul of the campus Computer Networks Laboratory: planning and technical restructuring of the environment, plus teaching and mentoring students throughout the project.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Undergraduate Researcher — Smart Campus (PIBIC scholarship)</span> <span class="onde">| IFSULDEMINAS</span></span>
+      <span class="quando">Sep 2024 – Sep 2025 · Muzambinho, Brazil</span>
+    </div>
+    <ul>
+      <li><b>Solicita</b> module of the institutional app (React Native, SQLite): any student or staff member files a request — maintenance, parts, repairs — routed automatically to the right department. <b>In use across the whole campus.</b></li>
+      <li>Requirements gathered directly with the client department, including on-site visits to understand the real context of use. Rollout, training for users with little smartphone experience, testing and documentation.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Freelance developer</span> <span class="onde">| 99Freelas</span></span>
+      <span class="quando">Jan 2024 – Jan 2025 · remote</span>
+    </div>
+    <ul>
+      <li>Websites and landing pages for clients in HTML, CSS, PHP and WordPress, from requirements to publication and post-delivery support.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Project manager — Robotics Adventures</span> <span class="onde">| IFSULDEMINAS</span></span>
+      <span class="quando">Jul 2023 – Apr 2024 · Poços de Caldas, Brazil</span>
+    </div>
+    <ul>
+      <li>Planning and tracking of team work in an agile setting (Scrum/Kanban); development in GML and JavaScript. Published: <a class="link" href="https://gx.games/pt-br/games/uielpr/robotics-adventures-demo">gx.games/pt-br/games/uielpr/robotics-adventures-demo</a></li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Lastro</span> <span class="onde">— embedded relational database, written from scratch in Rust</span></span>
+      <span class="quando">madeiragab.github.io/lastro</span>
+    </div>
+    <ul>
+      <li>Pager with buffer pool, B+Tree, WAL with ARIES recovery, SQL parser and MVCC — one library dependency. <span class="num">237</span> tests: a crash fuzzer modelling power loss, an isolation-anomaly battery and SQLite's <i>sqllogictest</i> corpus. WebAssembly demo. <span class="stack-inline">Rust</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Market Direction</span> <span class="onde">— next-day directional stock prediction (B3 and S&amp;P 500)</span></span>
+      <span class="quando">madeiragab.github.io/market-direction</span>
+    </div>
+    <ul>
+      <li>Walk-forward with embargo, transaction cost and an executable leakage audit over <span class="num">40,169</span> out-of-sample predictions on B3 and <span class="num">47,805</span> in the US. Published as measured: <span class="num">50.60%</span> accuracy on B3 (p = 0.0079), no signal in the US, <b>no strategy beat buy and hold</b>. The deliverable is the measurement infrastructure. <span class="stack-inline">Python · scikit-learn</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Rastro</span> <span class="onde">— real-time tracking and geofencing for cattle herds</span></span>
+      <span class="quando">github.com/madeiragab/rastro</span>
+    </div>
+    <ul>
+      <li>FastAPI service on PostGIS, Argon2id with refresh-token rotation, a built-in herd simulator and Docker deployment. <span class="num">129</span> tests running in CI against a real PostGIS, not a stub. <span class="stack-inline">FastAPI · PostGIS · TypeScript · Docker</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Tactical Simulator for AI Evaluation</span> <span class="onde">— undergraduate thesis</span></span>
+      <span class="quando">madeiragab.github.io/tcc-simulador-ia</span>
+    </div>
+    <ul>
+      <li>Measures the strategic quality of AI agents by effectiveness <i>and</i> cost — not just who wins, but how much computation it takes. <span class="num">7,000</span> matches over a frozen bank of <span class="num">1,000</span> seeds, with significance testing and validated environment neutrality. Browser demo. <span class="stack-inline">Godot/GDScript · Python</span></li>
+    </ul>
+  </div>
+
+  <p class="tambem">
+    <b>Also:</b> <b>GEICIS Ponto</b> — internship time tracking in Django + DRF + React, API contract
+    settled before any code, <span class="num">72</span> tests in CI, awaiting campus IT deployment ·
+    <b>GA36-MB</b> — reverse engineering of a handheld console with a remarked SoC.
+  </p>
+
+  <h2>Open source</h2>
+  <p>
+    <b>@bjorn3/browser_wasi_shim</b> (425★) — submitted a fix for an argv buffer overrun: the size
+    was measured in UTF-16 code units while the write used UTF-8 bytes, corrupting guest memory
+    from the first non-ASCII character on. Found while running Lastro in the browser.
+  </p>
+
+  <h2>Education and languages</h2>
+  <p class="formacao">
+    <b>BSc Computer Science</b> — IFSULDEMINAS, Muzambinho Campus · Feb 2023 – Mar 2027 (expected)<br />
+    <b>Technical diploma in Informatics</b> — IFSULDEMINAS, Muzambinho Campus · Feb 2020 – Dec 2022 (completed)<br />
+    <b>Languages:</b> Portuguese (native) · English (advanced) · Spanish (upper intermediate)
+  </p>
+
+</main>
+</body>
+</html>
