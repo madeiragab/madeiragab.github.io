@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gabriel Madeira — Currículo</title>
+<meta name="description" content="Gabriel Madeira — Desenvolvedor Backend. Django, FastAPI, PostgreSQL, Rust. Currículo." />
+<style>
+  :root {
+    --tinta: #14161a;
+    --fraco: #55606e;
+    --linha: #d8dce2;
+    --vermelho: #c81e2b;
+    --sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { background: #eceef1; }
+
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    color: var(--tinta);
+    font-size: 8.8pt;
+    line-height: 1.26;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .folha {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 12mm auto;
+    padding: 11mm 13mm;
+    background: #fff;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+  }
+
+  /* ---------- cabeçalho ---------- */
+
+  h1 {
+    margin: 0;
+    font-size: 17pt;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .cargo {
+    margin: 1pt 0 0;
+    font-size: 11pt;
+    font-weight: 600;
+    color: var(--vermelho);
+    letter-spacing: 0.01em;
+  }
+
+  .contato {
+    margin: 5pt 0 0;
+    font-size: 8.6pt;
+    color: var(--fraco);
+  }
+  .contato a { color: var(--fraco); text-decoration: none; }
+  .contato .sep { color: var(--linha); padding: 0 4pt; }
+
+  .disponibilidade {
+    margin-top: 5pt;
+    padding: 4pt 7pt;
+    border-left: 2.5pt solid var(--vermelho);
+    background: #faf7f7;
+    font-size: 9pt;
+  }
+  .disponibilidade strong { font-weight: 700; }
+
+  /* ---------- seções ---------- */
+
+  h2 {
+    margin: 6pt 0 3pt;
+    padding-bottom: 2pt;
+    border-bottom: 0.8pt solid var(--linha);
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--vermelho);
+  }
+
+  p { margin: 0 0 3pt; }
+
+  .item { margin-bottom: 3pt; }
+  .item:last-child { margin-bottom: 0; }
+
+  .titulo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8pt;
+  }
+  .titulo-item .cargo-linha { font-weight: 700; font-size: 10pt; }
+  .titulo-item .onde { font-weight: 400; color: var(--fraco); }
+  .titulo-item .quando {
+    font-size: 8.5pt;
+    color: var(--fraco);
+    white-space: nowrap;
+  }
+
+  ul { margin: 2pt 0 0; padding-left: 12pt; }
+  li { margin-bottom: 1pt; }
+
+  .num { font-weight: 700; }
+
+  .stack-inline {
+    color: var(--fraco);
+    font-size: 8pt;
+    white-space: nowrap;
+  }
+
+  .hab { margin-bottom: 2pt; }
+  .tambem { margin-top: 4pt; }
+  .hab b { font-weight: 700; }
+
+  a.link { color: var(--tinta); text-decoration: none; border-bottom: 0.5pt dotted var(--linha); }
+
+  .rodape-idiomas { margin-top: 4pt; font-size: 8.6pt; }
+
+  /* ---------- impressão ---------- */
+
+  @media print {
+    html { background: #fff; }
+    .folha {
+      width: auto;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    @page { size: A4; margin: 10mm 12mm; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<main class="folha">
+
+  <header>
+    <h1>Gabriel Madeira Lourenço Silva</h1>
+    <p class="cargo">Desenvolvedor Backend</p>
+    <p class="contato">
+      Muzambinho, MG<span class="sep">•</span>(35) 99975-4798<span class="sep">•</span><a href="mailto:gabrielmadeira1504@gmail.com">gabrielmadeira1504@gmail.com</a><br />
+      <a href="https://madeiragab.github.io">madeiragab.github.io</a><span class="sep">•</span><a href="https://github.com/madeiragab">github.com/madeiragab</a><span class="sep">•</span><a href="https://www.linkedin.com/in/gabriel-madeira-b19100209/">linkedin.com/in/gabriel-madeira-b19100209</a>
+    </p>
+  </header>
+
+  <p class="disponibilidade">
+    <strong>Disponibilidade:</strong> imediata para <strong>home office</strong>; presencial ou
+    híbrido, com mudança de cidade, a partir de março de 2027.
+  </p>
+
+  <h2>Perfil</h2>
+  <p>
+    Estudante do último ano de Ciência da Computação no IFSULDEMINAS, com experiência prática
+    desde 2023 em projetos reais — do levantamento de requisitos com o usuário final ao suporte
+    pós-implantação. Foco em <b>backend</b>: modelagem de domínio, regras de negócio no servidor,
+    APIs REST e banco relacional. Contrato de API antes do código; resultado verificado por
+    teste em CI, inclusive quando é desfavorável.
+  </p>
+
+  <h2>Habilidades técnicas</h2>
+  <p class="hab"><b>Backend e dados:</b> Python, Django, Django REST Framework, FastAPI, Node.js, Flask · PostgreSQL, PostGIS, SQLite, MySQL · pandas, scikit-learn, LightGBM</p>
+  <p class="hab"><b>Sistemas e ferramentas:</b> Rust, Docker, GitHub Actions, Linux, Git · JavaScript, TypeScript, React, React Native, HTML/CSS, Tailwind · Godot/GDScript, PHP, WordPress, C++ (maratonas: OLIP, regional)</p>
+
+  <h2>Experiência profissional</h2>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Estagiário — Laboratório de Redes</span> <span class="onde">| IFSULDEMINAS</span></span>
+      <span class="quando">abr 2026 – atual · Muzambinho, MG</span>
+    </div>
+    <ul>
+      <li>Reformulação completa da estrutura do Laboratório de Redes do campus: planejamento e reestruturação técnica do ambiente, além de ensino e orientação de alunos ao longo do projeto.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Iniciação Científica — Campus Inteligente (bolsista PIBIC)</span> <span class="onde">| IFSULDEMINAS</span></span>
+      <span class="quando">set 2024 – set 2025 · Muzambinho, MG</span>
+    </div>
+    <ul>
+      <li>Módulo <b>Solicita</b> do aplicativo institucional (React Native, SQLite): qualquer aluno ou servidor abre uma solicitação — manutenção, peças, reparos — roteada automaticamente ao setor responsável. <b>Em uso por toda a comunidade do campus.</b></li>
+      <li>Levantamento de requisitos direto com o setor cliente, com visitas in loco para entender o contexto real de uso antes de implementar.</li>
+      <li>Implantação, treinamento de usuários com pouca familiaridade com smartphones, testes e documentação técnica do código.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Programador freelancer</span> <span class="onde">| 99Freelas</span></span>
+      <span class="quando">jan 2024 – jan 2025 · remoto</span>
+    </div>
+    <ul>
+      <li>Sites e páginas para clientes em HTML, CSS, PHP e WordPress, do levantamento de requisitos à publicação e ao suporte pós-entrega.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Gestor de projeto — Robotics Adventures</span> <span class="onde">| IFSULDEMINAS</span></span>
+      <span class="quando">jul 2023 – abr 2024 · Poços de Caldas, MG</span>
+    </div>
+    <ul>
+      <li>Planejamento e acompanhamento da equipe em ambiente ágil (Scrum/Kanban); desenvolvimento em GML e JavaScript. Jogo publicado: <a class="link" href="https://gx.games/pt-br/games/uielpr/robotics-adventures-demo">gx.games/pt-br/games/uielpr/robotics-adventures-demo</a></li>
+    </ul>
+  </div>
+
+  <h2>Projetos</h2>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Lastro</span> <span class="onde">— banco de dados relacional embutido, escrito do zero em Rust</span></span>
+      <span class="quando">madeiragab.github.io/lastro</span>
+    </div>
+    <ul>
+      <li>Pager com buffer pool, B+Tree, WAL com recovery ARIES, parser SQL e MVCC — uma única dependência. <span class="num">237</span> testes: crash fuzzer que modela corte de energia, anomalias de isolamento e o corpus <i>sqllogictest</i> do SQLite. Demo em WebAssembly. <span class="stack-inline">Rust</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Market Direction</span> <span class="onde">— previsão direcional de ações (B3 e S&amp;P 500)</span></span>
+      <span class="quando">madeiragab.github.io/market-direction</span>
+    </div>
+    <ul>
+      <li>Walk-forward com embargo, custo de transação e auditoria de vazamento executável sobre <span class="num">40.169</span> previsões fora da amostra na B3 e <span class="num">47.805</span> nos EUA. Publicado como medido: <span class="num">50,60%</span> de acerto na B3 (p = 0,0079), nenhum sinal nos EUA, <b>nenhuma estratégia bateu comprar e segurar</b>. A entrega é a infraestrutura de medição. <span class="stack-inline">Python · scikit-learn · LightGBM</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Rastro</span> <span class="onde">— rastreamento e geocerca para rebanho bovino</span></span>
+      <span class="quando">github.com/madeiragab/rastro</span>
+    </div>
+    <ul>
+      <li>API FastAPI com PostGIS, Argon2id com rotação de refresh token, simulador de rebanho embutido e implantação em Docker. <span class="num">129</span> testes no CI contra PostGIS real, não stub. <span class="stack-inline">FastAPI · PostGIS · TypeScript · Docker</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
+      <span><span class="cargo-linha">Simulador Tático para Avaliação de IA</span> <span class="onde">— Trabalho de Conclusão de Curso</span></span>
+      <span class="quando">madeiragab.github.io/tcc-simulador-ia</span>
+    </div>
+    <ul>
+      <li>Mede a qualidade estratégica de agentes de IA por eficácia <i>e</i> custo — não só quem vence, mas quanto processamento gasta para vencer. <span class="num">7.000</span> partidas sobre banco fixo de <span class="num">1.000</span> seeds, com testes de significância e neutralidade do ambiente validada. Demo no navegador. <span class="stack-inline">Godot/GDScript · Python</span></li>
+    </ul>
+  </div>
+
+  <p class="tambem">
+    <b>Também:</b> <b>GEICIS Ponto</b> — horas de estágio em Django + DRF + React, contrato de API
+    fechado com o grupo antes do código, <span class="num">72</span> testes no CI, aguardando
+    implantação pelo NTI · <b>GA36-MB</b> — engenharia reversa de um console portátil com SoC remarcado.
+  </p>
+
+  <h2>Contribuição em código aberto</h2>
+  <p>
+    <b>@bjorn3/browser_wasi_shim</b> (425★) — correção enviada para estouro do buffer de argumentos:
+    o tamanho era medido em unidades UTF-16 e a escrita feita em bytes UTF-8, corrompendo a memória
+    do convidado a partir do primeiro caractere não-ASCII. Encontrado e diagnosticado rodando o
+    Lastro compilado para <code>wasm32-wasip1</code> no navegador.
+  </p>
+
+  <h2>Formação acadêmica</h2>
+  <div class="titulo-item">
+    <span><span class="cargo-linha">Ciência da Computação</span> <span class="onde">| IFSULDEMINAS — Campus Muzambinho</span></span>
+    <span class="quando">fev 2023 – mar 2027 (previsão)</span>
+  </div>
+  <div class="titulo-item">
+    <span><span class="cargo-linha">Técnico em Informática</span> <span class="onde">| IFSULDEMINAS — Campus Muzambinho</span></span>
+    <span class="quando">fev 2020 – dez 2022 (concluído)</span>
+  </div>
+
+  <p class="rodape-idiomas">
+    <b>Idiomas:</b> Português (nativo) · Inglês (avançado) · Espanhol (intermediário alto)
+  </p>
+
+</main>
+</body>
+</html>
