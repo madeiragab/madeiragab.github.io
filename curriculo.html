@@ -5,139 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gabriel Madeira — Currículo</title>
 <meta name="description" content="Gabriel Madeira — Desenvolvedor Backend. Django, FastAPI, PostgreSQL, Rust. Currículo." />
-<style>
-  :root {
-    --tinta: #14161a;
-    --fraco: #55606e;
-    --linha: #d8dce2;
-    --vermelho: #c81e2b;
-    --sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-
-  * { box-sizing: border-box; }
-
-  html { background: #eceef1; }
-
-  body {
-    margin: 0;
-    font-family: var(--sans);
-    color: var(--tinta);
-    font-size: 8.8pt;
-    line-height: 1.26;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .folha {
-    width: 210mm;
-    min-height: 297mm;
-    margin: 12mm auto;
-    padding: 11mm 13mm;
-    background: #fff;
-    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
-  }
-
-  /* ---------- cabeçalho ---------- */
-
-  h1 {
-    margin: 0;
-    font-size: 17pt;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-
-  .cargo {
-    margin: 1pt 0 0;
-    font-size: 11pt;
-    font-weight: 600;
-    color: var(--vermelho);
-    letter-spacing: 0.01em;
-  }
-
-  .contato {
-    margin: 5pt 0 0;
-    font-size: 8.6pt;
-    color: var(--fraco);
-  }
-  .contato a { color: var(--fraco); text-decoration: none; }
-  .contato .sep { color: var(--linha); padding: 0 4pt; }
-
-  .disponibilidade {
-    margin-top: 5pt;
-    padding: 4pt 7pt;
-    border-left: 2.5pt solid var(--vermelho);
-    background: #faf7f7;
-    font-size: 9pt;
-  }
-  .disponibilidade strong { font-weight: 700; }
-
-  /* ---------- seções ---------- */
-
-  h2 {
-    margin: 6pt 0 3pt;
-    padding-bottom: 2pt;
-    border-bottom: 0.8pt solid var(--linha);
-    font-size: 8.5pt;
-    font-weight: 700;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: var(--vermelho);
-  }
-
-  p { margin: 0 0 3pt; }
-
-  .item { margin-bottom: 3pt; }
-  .item:last-child { margin-bottom: 0; }
-
-  .titulo-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 8pt;
-  }
-  .titulo-item .cargo-linha { font-weight: 700; font-size: 10pt; }
-  .titulo-item .onde { font-weight: 400; color: var(--fraco); }
-  .titulo-item .quando {
-    font-size: 8.5pt;
-    color: var(--fraco);
-    white-space: nowrap;
-  }
-
-  ul { margin: 2pt 0 0; padding-left: 12pt; }
-  li { margin-bottom: 1pt; }
-
-  .num { font-weight: 700; }
-
-  .stack-inline {
-    color: var(--fraco);
-    font-size: 8pt;
-    white-space: nowrap;
-  }
-
-  .hab { margin-bottom: 2pt; }
-  .tambem { margin-top: 4pt; }
-  .hab b { font-weight: 700; }
-
-  a.link { color: var(--tinta); text-decoration: none; border-bottom: 0.5pt dotted var(--linha); }
-
-  .rodape-idiomas { margin-top: 4pt; font-size: 8.6pt; }
-
-  /* ---------- impressão ---------- */
-
-  @media print {
-    html { background: #fff; }
-    .folha {
-      width: auto;
-      min-height: 0;
-      margin: 0;
-      padding: 0;
-      box-shadow: none;
-    }
-    @page { size: A4; margin: 10mm 12mm; }
-    a { color: inherit; }
-  }
-</style>
+<link rel="stylesheet" href="css/curriculo.css" />
 </head>
 <body>
+
+<nav class="barra-idioma">
+  <a href="curriculo.html" aria-current="page">PT</a>
+  <a href="resume.html">EN</a>
+  <a class="imprimir" href="#" onclick="window.print();return false;">imprimir / PDF</a>
+</nav>
+
 <main class="folha">
 
   <header>
@@ -267,17 +144,10 @@
     Lastro compilado para <code>wasm32-wasip1</code> no navegador.
   </p>
 
-  <h2>Formação acadêmica</h2>
-  <div class="titulo-item">
-    <span><span class="cargo-linha">Ciência da Computação</span> <span class="onde">| IFSULDEMINAS — Campus Muzambinho</span></span>
-    <span class="quando">fev 2023 – mar 2027 (previsão)</span>
-  </div>
-  <div class="titulo-item">
-    <span><span class="cargo-linha">Técnico em Informática</span> <span class="onde">| IFSULDEMINAS — Campus Muzambinho</span></span>
-    <span class="quando">fev 2020 – dez 2022 (concluído)</span>
-  </div>
-
-  <p class="rodape-idiomas">
+  <h2>Formação acadêmica e idiomas</h2>
+  <p class="formacao">
+    <b>Ciência da Computação</b> — IFSULDEMINAS, Campus Muzambinho · fev 2023 – mar 2027 (previsão)<br />
+    <b>Técnico em Informática</b> — IFSULDEMINAS, Campus Muzambinho · fev 2020 – dez 2022 (concluído)<br />
     <b>Idiomas:</b> Português (nativo) · Inglês (avançado) · Espanhol (intermediário alto)
   </p>
 

@@ -1,0 +1,181 @@
+/* Currículo — folha A4, uma página, usada por curriculo.html e resume.html.
+   Uma fonte, dois destinos: quem chega pelo navegador lê, quem precisa do
+   arquivo imprime para PDF (Ctrl+P). */
+
+:root {
+  --tinta: #14161a;
+  --fraco: #55606e;
+  --linha: #d8dce2;
+  --vermelho: #c81e2b;
+  --sans: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { background: #eceef1; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--tinta);
+  font-size: 8.8pt;
+  line-height: 1.26;
+  -webkit-font-smoothing: antialiased;
+}
+
+.folha {
+  position: relative;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 12mm auto;
+  padding: 11mm 13mm;
+  background: #fff;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+}
+
+/* ---------- barra de idioma (só na tela) ---------- */
+
+.barra-idioma {
+  width: 210mm;
+  margin: 12mm auto -10mm;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  font-family: var(--sans);
+}
+.barra-idioma a {
+  font-size: 9pt;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--fraco);
+  background: #fff;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  padding: 3px 11px;
+}
+.barra-idioma a:hover { border-color: var(--vermelho); color: var(--vermelho); }
+.barra-idioma a[aria-current="page"] {
+  color: #fff;
+  background: var(--vermelho);
+  border-color: var(--vermelho);
+}
+.barra-idioma .imprimir { border-style: dashed; }
+
+/* ---------- cabeçalho ---------- */
+
+h1 {
+  margin: 0;
+  font-size: 17pt;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.cargo {
+  margin: 1pt 0 0;
+  font-size: 11pt;
+  font-weight: 600;
+  color: var(--vermelho);
+  letter-spacing: 0.01em;
+}
+
+.contato {
+  margin: 5pt 0 0;
+  font-size: 8.6pt;
+  color: var(--fraco);
+}
+.contato a { color: var(--fraco); text-decoration: none; }
+.contato .sep { color: var(--linha); padding: 0 4pt; }
+
+.disponibilidade {
+  margin-top: 5pt;
+  padding: 4pt 7pt;
+  border-left: 2.5pt solid var(--vermelho);
+  background: #faf7f7;
+  font-size: 9pt;
+}
+.disponibilidade strong { font-weight: 700; }
+
+/* ---------- seções ---------- */
+
+h2 {
+  margin: 6pt 0 3pt;
+  padding-bottom: 2pt;
+  border-bottom: 0.8pt solid var(--linha);
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+}
+
+p { margin: 0 0 3pt; }
+
+.item { margin-bottom: 3pt; }
+.item:last-child { margin-bottom: 0; }
+
+.titulo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8pt;
+}
+.titulo-item .cargo-linha { font-weight: 700; font-size: 10pt; }
+.titulo-item .onde { font-weight: 400; color: var(--fraco); }
+.titulo-item .quando {
+  font-size: 8.5pt;
+  color: var(--fraco);
+  white-space: nowrap;
+}
+
+ul { margin: 2pt 0 0; padding-left: 12pt; }
+li { margin-bottom: 1pt; }
+
+.num { font-weight: 700; }
+
+.stack-inline {
+  color: var(--fraco);
+  font-size: 8pt;
+  white-space: nowrap;
+}
+
+.hab { margin-bottom: 2pt; }
+.tambem { margin-top: 4pt; }
+.hab b { font-weight: 700; }
+
+a.link {
+  color: var(--tinta);
+  text-decoration: none;
+  border-bottom: 0.5pt dotted var(--linha);
+}
+
+.formacao { margin-top: 1pt; }
+
+/* O mesmo conteudo em ingles ocupa mais linhas; a escala compensa
+   para que as duas versoes fechem em uma pagina. */
+body.denso { font-size: 8.5pt; }
+
+/* ---------- impressão ---------- */
+
+@media print {
+  html { background: #fff; }
+  .barra-idioma { display: none; }
+  .folha {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  @page { size: A4; margin: 9mm 12mm; }
+  a { color: inherit; }
+}
+
+/* ---------- tela estreita ---------- */
+
+@media screen and (max-width: 224mm) {
+  .folha, .barra-idioma { width: auto; margin-left: 8px; margin-right: 8px; }
+  .folha { padding: 18px 16px; min-height: 0; }
+  .barra-idioma { margin-bottom: -6px; }
+  .titulo-item { flex-direction: column; gap: 0; }
+  .titulo-item .quando { white-space: normal; }
+}
