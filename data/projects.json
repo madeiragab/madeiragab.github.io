@@ -3,14 +3,18 @@
     "name": "lastro",
     "description": "Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com crash recovery, parser SQL e MVCC.",
     "html_url": "https://github.com/madeiragab/lastro",
-    "homepage": null,
+    "homepage": "https://madeiragab.github.io/lastro/",
     "language": "Rust",
     "topics": [
+      "b-tree",
       "database",
       "portifolio",
       "rust",
       "storage-engine",
-      "systems-programming"
+      "systems-programming",
+      "tool",
+      "wal",
+      "webassembly"
     ],
     "stargazers_count": 0,
     "updated_at": "2026-09-01T18:23:52Z"
