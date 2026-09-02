@@ -19,7 +19,7 @@ const TEXTOS = {
   /* ---------------------------------------------------------- */
   pt: {
     'meta.lang': 'pt-BR',
-    'meta.title': 'Darosa % Dev Backend',
+    'meta.title': 'Darosa · Dev Backend',
     'meta.desc': 'Gabriel Madeira — estudante de Ciência da Computação focado em backend, Django, PostgreSQL e APIs REST. Portfólio de projetos reais.',
 
     'nav.sobre': 'SOBRE',
@@ -51,15 +51,16 @@ const TEXTOS = {
     'stat.anos': 'ANOS ESTUDANDO',
     'stat.projetos': 'PROJETOS REAIS ATÉ AGORA',
     'stat.stacks': 'STACKS',
-    'stat.cafes': 'CAFÉS',
+    'stat.testes': 'TESTES AUTOMATIZADOS',
+    'proj.destaque': 'DESTAQUE',
 
     'contrib.eyebrow': '/* atividade no github */ <span class="red">commits · PRs · issues</span>',
     'contrib.titulo': 'CONTRIBUIÇÕES EM NÚMEROS.',
     'contrib.desc': 'Atividade real, direto do meu GitHub — atualizada todos os dias de forma automática.',
-    'contrib.hoje': 'CONTRIBUIÇÕES HOJE',
+    'contrib.maiorSeq': 'MAIOR SEQUÊNCIA NO ANO',
     'contrib.mes': 'CONTRIBUIÇÕES ESTE MÊS',
     'contrib.ano': 'NO ÚLTIMO ANO',
-    'contrib.streak': 'DIAS SEGUIDOS CONTRIBUINDO',
+    'contrib.mediaSemana': 'POR SEMANA, EM MÉDIA',
     'contrib.atualizado': '// última atualização automática: {data} às {hora}',
     'contrib.agora': '// dados ao vivo, buscados agora ({hora})',
     'contrib.erro': '// não foi possível carregar os dados agora',
@@ -150,7 +151,7 @@ const TEXTOS = {
   /* ---------------------------------------------------------- */
   en: {
     'meta.lang': 'en',
-    'meta.title': 'Darosa % Backend Dev',
+    'meta.title': 'Darosa · Backend Dev',
     'meta.desc': 'Gabriel Madeira — Computer Science student focused on backend, Django, PostgreSQL and REST APIs. Portfolio of real projects.',
 
     'nav.sobre': 'ABOUT',
@@ -182,15 +183,16 @@ const TEXTOS = {
     'stat.anos': 'YEARS STUDYING',
     'stat.projetos': 'REAL PROJECTS SO FAR',
     'stat.stacks': 'STACKS',
-    'stat.cafes': 'COFFEES',
+    'stat.testes': 'AUTOMATED TESTS',
+    'proj.destaque': 'FEATURED',
 
     'contrib.eyebrow': '/* github activity */ <span class="red">commits · PRs · issues</span>',
     'contrib.titulo': 'CONTRIBUTIONS IN NUMBERS.',
     'contrib.desc': 'Real activity, straight from my GitHub — updated automatically every day.',
-    'contrib.hoje': 'CONTRIBUTIONS TODAY',
+    'contrib.maiorSeq': 'LONGEST STREAK THIS YEAR',
     'contrib.mes': 'CONTRIBUTIONS THIS MONTH',
     'contrib.ano': 'IN THE LAST YEAR',
-    'contrib.streak': 'DAY CONTRIBUTION STREAK',
+    'contrib.mediaSemana': 'PER WEEK, ON AVERAGE',
     'contrib.atualizado': '// last automatic update: {data} at {hora}',
     'contrib.agora': '// live data, fetched just now ({hora})',
     'contrib.erro': '// could not load the data right now',
@@ -281,7 +283,7 @@ const TEXTOS = {
   /* ---------------------------------------------------------- */
   es: {
     'meta.lang': 'es',
-    'meta.title': 'Darosa % Dev Backend',
+    'meta.title': 'Darosa · Dev Backend',
     'meta.desc': 'Gabriel Madeira — estudiante de Ciencias de la Computación enfocado en backend, Django, PostgreSQL y APIs REST. Portafolio de proyectos reales.',
 
     'nav.sobre': 'SOBRE MÍ',
@@ -313,15 +315,16 @@ const TEXTOS = {
     'stat.anos': 'AÑOS ESTUDIANDO',
     'stat.projetos': 'PROYECTOS REALES HASTA AHORA',
     'stat.stacks': 'STACKS',
-    'stat.cafes': 'CAFÉS',
+    'stat.testes': 'PRUEBAS AUTOMATIZADAS',
+    'proj.destaque': 'DESTACADO',
 
     'contrib.eyebrow': '/* actividad en github */ <span class="red">commits · PRs · issues</span>',
     'contrib.titulo': 'CONTRIBUCIONES EN NÚMEROS.',
     'contrib.desc': 'Actividad real, directo de mi GitHub — actualizada automáticamente todos los días.',
-    'contrib.hoje': 'CONTRIBUCIONES HOY',
+    'contrib.maiorSeq': 'MAYOR RACHA DEL AÑO',
     'contrib.mes': 'CONTRIBUCIONES ESTE MES',
     'contrib.ano': 'EN EL ÚLTIMO AÑO',
-    'contrib.streak': 'DÍAS SEGUIDOS CONTRIBUYENDO',
+    'contrib.mediaSemana': 'POR SEMANA, EN PROMEDIO',
     'contrib.atualizado': '// última actualización automática: {data} a las {hora}',
     'contrib.agora': '// datos en vivo, obtenidos ahora ({hora})',
     'contrib.erro': '// no se pudieron cargar los datos ahora',
