@@ -8,6 +8,9 @@
 
 const GH_USER = 'madeiragab';
 const GH_TOPIC = 'portifolio';
+/* Repositório com este topic sobe para o começo da grade e ganha selo.
+   Serve para o visitante que só vai olhar os três primeiros cartões. */
+const GH_TOPIC_DESTAQUE = 'destaque';
 
 /* Topics que funcionam como CATEGORIA (viram filtro).
    O valor é a chave de tradução em js/i18n.js.
@@ -128,7 +131,9 @@ async function carregarProjetos(aoVivo = false) {
 }
 
 function normalizarRepo(repo) {
-  const topics = (repo.topics || []).filter(t => t !== GH_TOPIC);
+  const destaque = (repo.topics || []).includes(GH_TOPIC_DESTAQUE);
+  const topics = (repo.topics || [])
+    .filter(t => t !== GH_TOPIC && t !== GH_TOPIC_DESTAQUE);
   const catTopic = topics.find(t => CATEGORIAS[t]);
   const tech = topics
     .filter(t => t !== catTopic)
@@ -136,6 +141,7 @@ function normalizarRepo(repo) {
     .join(' · ');
   return {
     name: repo.name,
+    destaque,
     categoria: catTopic ? CATEGORIAS[catTopic] : CATEGORIA_PADRAO,
     tech: tech || (repo.language || ''),
     description: repo.description || '',
@@ -165,11 +171,14 @@ function renderFiltros() {
 }
 
 function renderProjetos(categoria) {
-  const lista = categoria ? projetos.filter(p => p.categoria === categoria) : projetos;
+  const lista = (categoria ? projetos.filter(p => p.categoria === categoria) : projetos)
+    .slice()
+    .sort((a, b) => Number(b.destaque) - Number(a.destaque));
   projGrid.innerHTML = lista.map(p => {
     const desc = i18n.descricaoProjeto(p.name, p.description) || i18n.t('proj.semDesc');
     return `
-    <article class="proj-card">
+    <article class="proj-card${p.destaque ? ' destaque' : ''}">
+      ${p.destaque ? `<p class="proj-selo">${esc(i18n.t('proj.destaque'))}</p>` : ''}
       <div class="proj-head">
         <h3 class="proj-nome">${esc(p.name.replace(/-/g, ' '))}</h3>
         <span class="proj-cat">${esc(i18n.t(p.categoria))}</span>
@@ -238,26 +247,24 @@ async function carregarContribuicoes(aoVivo = false) {
 
   const hojeStr = new Date().toISOString().slice(0, 10);
   const mesStr = hojeStr.slice(0, 7);
-  const porData = new Map(dias.map(d => [d.date, d.count]));
 
-  const hoje = porData.get(hojeStr) || 0;
   const mes = dias.filter(d => d.date.startsWith(mesStr)).reduce((s, d) => s + d.count, 0);
   const ano = dias.reduce((s, d) => s + d.count, 0);
 
-  /* streak: dias consecutivos com contribuição, terminando hoje ou ontem */
-  let streak = 0;
-  const cursor = new Date();
-  if (!porData.get(hojeStr)) cursor.setDate(cursor.getDate() - 1);
-  while (true) {
-    const key = cursor.toISOString().slice(0, 10);
-    if (porData.get(key) > 0) { streak++; cursor.setDate(cursor.getDate() - 1); }
-    else break;
+  /* Constância, não pico. "Hoje" e "dias seguidos" zeram num fim de semana
+     e passam a impressão errada sobre um ano inteiro de trabalho; estes dois
+     saem da mesma série e descrevem o hábito ao longo do ano. */
+  let maiorSeq = 0, seqAtual = 0;
+  for (const d of dias) {
+    seqAtual = d.count > 0 ? seqAtual + 1 : 0;
+    if (seqAtual > maiorSeq) maiorSeq = seqAtual;
   }
+  const mediaSemana = Math.round(ano / (dias.length / 7));
 
-  animaNumero('cHoje', hoje);
+  animaNumero('cMaiorSeq', maiorSeq);
   animaNumero('cMes', mes);
   animaNumero('cAno', ano);
-  animaNumero('cStreak', streak);
+  animaNumero('cMediaSemana', mediaSemana);
 
   renderContribAtualizado();
   return true;
