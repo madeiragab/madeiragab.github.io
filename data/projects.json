@@ -1,5 +1,40 @@
 [
   {
+    "name": "rpg-panel",
+    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
+    "html_url": "https://github.com/madeiragab/rpg-panel",
+    "homepage": "https://github.com/madeiragab/rpg-panel/tree/main/docs",
+    "language": "Python",
+    "topics": [
+      "django",
+      "javascript",
+      "portifolio",
+      "python",
+      "web"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-09-05T17:10:52Z"
+  },
+  {
+    "name": "braseiro",
+    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
+    "html_url": "https://github.com/madeiragab/braseiro",
+    "homepage": null,
+    "language": "PowerShell",
+    "topics": [
+      "ai",
+      "llm",
+      "local-first",
+      "ollama",
+      "portifolio",
+      "powershell",
+      "rpg",
+      "windows"
+    ],
+    "stargazers_count": 0,
+    "updated_at": "2026-09-05T15:29:11Z"
+  },
+  {
     "name": "lastro",
     "description": "Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com crash recovery, parser SQL e MVCC.",
     "html_url": "https://github.com/madeiragab/lastro",
@@ -101,22 +136,6 @@
     ],
     "stargazers_count": 2,
     "updated_at": "2026-09-02T04:13:56Z"
-  },
-  {
-    "name": "rpg-panel",
-    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
-    "html_url": "https://github.com/madeiragab/rpg-panel",
-    "homepage": "https://github.com/madeiragab/rpg-panel/tree/main/docs",
-    "language": "Python",
-    "topics": [
-      "django",
-      "javascript",
-      "portifolio",
-      "python",
-      "web"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-09-02T12:49:12Z"
   },
   {
     "name": "darkos-ga36-port",
