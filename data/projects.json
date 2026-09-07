@@ -1,5 +1,25 @@
 [
   {
+    "name": "ascensao-dos-semideuses",
+    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
+    "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
+    "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
+    "language": "HTML",
+    "topics": [
+      "balancing",
+      "game",
+      "game-design",
+      "greek-mythology",
+      "portifolio",
+      "python",
+      "rpg",
+      "simulation",
+      "tabletop-rpg"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-09-07T15:02:20Z"
+  },
+  {
     "name": "rpg-panel",
     "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
     "html_url": "https://github.com/madeiragab/rpg-panel",
@@ -13,7 +33,7 @@
       "web"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-09-06T16:30:25Z"
+    "updated_at": "2026-09-07T00:12:09Z"
   },
   {
     "name": "braseiro",
@@ -116,26 +136,6 @@
     ],
     "stargazers_count": 1,
     "updated_at": "2026-09-02T12:51:01Z"
-  },
-  {
-    "name": "ascensao-dos-semideuses",
-    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
-    "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
-    "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
-    "language": "HTML",
-    "topics": [
-      "balancing",
-      "game",
-      "game-design",
-      "greek-mythology",
-      "portifolio",
-      "python",
-      "rpg",
-      "simulation",
-      "tabletop-rpg"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-09-02T04:13:56Z"
   },
   {
     "name": "darkos-ga36-port",
