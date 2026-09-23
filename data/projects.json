@@ -1,5 +1,22 @@
 [
   {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "destaque",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-09-23T12:08:51Z"
+  },
+  {
     "name": "rpg-panel",
     "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
     "html_url": "https://github.com/madeiragab/rpg-panel",
@@ -96,23 +113,6 @@
     ],
     "stargazers_count": 1,
     "updated_at": "2026-09-02T13:01:01Z"
-  },
-  {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "destaque",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-09-02T12:57:02Z"
   },
   {
     "name": "market-direction",
