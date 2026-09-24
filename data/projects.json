@@ -1,5 +1,20 @@
 [
   {
+    "name": "darkos-ga36-port",
+    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
+    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
+    "homepage": "https://github.com/madeiragab/darkos-ga36-port/tree/main/docs",
+    "language": "Python",
+    "topics": [
+      "hardware",
+      "linux",
+      "portifolio",
+      "reverse-engineering"
+    ],
+    "stargazers_count": 4,
+    "updated_at": "2026-09-24T15:34:39Z"
+  },
+  {
     "name": "tcc-simulador-ia",
     "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
     "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
@@ -136,21 +151,6 @@
     ],
     "stargazers_count": 1,
     "updated_at": "2026-09-02T12:51:01Z"
-  },
-  {
-    "name": "darkos-ga36-port",
-    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
-    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
-    "homepage": "https://github.com/madeiragab/darkos-ga36-port/tree/main/docs",
-    "language": "Python",
-    "topics": [
-      "hardware",
-      "linux",
-      "portifolio",
-      "reverse-engineering"
-    ],
-    "stargazers_count": 4,
-    "updated_at": "2026-09-02T12:49:13Z"
   },
   {
     "name": "rastro",
