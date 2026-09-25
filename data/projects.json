@@ -1,5 +1,24 @@
 [
   {
+    "name": "braseiro",
+    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
+    "html_url": "https://github.com/madeiragab/braseiro",
+    "homepage": null,
+    "language": "PowerShell",
+    "topics": [
+      "ai",
+      "llm",
+      "local-first",
+      "ollama",
+      "portifolio",
+      "powershell",
+      "rpg",
+      "windows"
+    ],
+    "stargazers_count": 0,
+    "updated_at": "2026-09-24T20:36:54Z"
+  },
+  {
     "name": "darkos-ga36-port",
     "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
     "html_url": "https://github.com/madeiragab/darkos-ga36-port",
@@ -66,25 +85,6 @@
     ],
     "stargazers_count": 2,
     "updated_at": "2026-09-07T15:02:20Z"
-  },
-  {
-    "name": "braseiro",
-    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
-    "html_url": "https://github.com/madeiragab/braseiro",
-    "homepage": null,
-    "language": "PowerShell",
-    "topics": [
-      "ai",
-      "llm",
-      "local-first",
-      "ollama",
-      "portifolio",
-      "powershell",
-      "rpg",
-      "windows"
-    ],
-    "stargazers_count": 0,
-    "updated_at": "2026-09-05T15:29:11Z"
   },
   {
     "name": "lastro",
