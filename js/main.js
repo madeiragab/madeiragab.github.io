@@ -28,6 +28,13 @@ const CATEGORIAS = {
 };
 const CATEGORIA_PADRAO = 'cat.outro';
 
+/* Repositórios com documentação mas com o campo Website vazio no GitHub.
+   O card usa este link no lugar. Preenchendo o Website do repositório (⚙ ao
+   lado de About), a linha dele pode sair daqui. */
+const LINK_SEM_WEBSITE = {
+  braseiro: 'https://github.com/madeiragab/braseiro/blob/main/docs/README.md',
+};
+
 /* Fallback caso a API do GitHub esteja fora do ar ou com rate limit */
 const PROJETOS_FALLBACK = [
   { name: 'lastro', categoria: 'cat.tool', tech: 'Rust · B+Tree · WAL', description: 'Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com recuperação de crash, parser SQL e MVCC.', html_url: 'https://github.com/madeiragab/lastro', homepage: 'https://madeiragab.github.io/lastro/', stargazers_count: 0 },
@@ -40,7 +47,7 @@ const PROJETOS_FALLBACK = [
   { name: 'darkos-ga36-port', categoria: 'cat.hardware', tech: 'Linux · Engenharia reversa', description: 'Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).', html_url: 'https://github.com/madeiragab/darkos-ga36-port', homepage: 'https://github.com/madeiragab/darkos-ga36-port/tree/main/docs', stargazers_count: 4 },
   { name: 'rpg-panel', categoria: 'cat.web', tech: 'Django · Python · JS', description: 'Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventário e papéis de mestre/jogador.', html_url: 'https://github.com/madeiragab/rpg-panel', homepage: 'https://github.com/madeiragab/rpg-panel/tree/main/docs', stargazers_count: 2 },
   { name: 'Guns-and-boots', categoria: 'cat.game', tech: 'Python · Pygame', description: 'Jogo 2D retrô-futurista por turnos, com máquina de estados, sistema de save e modo mobile.', html_url: 'https://github.com/madeiragab/Guns-and-boots', homepage: 'https://github.com/madeiragab/Guns-and-boots/tree/main/docs', stargazers_count: 2 },
-  { name: 'braseiro', categoria: 'cat.ai', tech: 'PowerShell · Ollama · LLM local', description: 'Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diário e a lore da campanha, e lê os PDFs do sistema.', html_url: 'https://github.com/madeiragab/braseiro', stargazers_count: 0 },
+  { name: 'braseiro', categoria: 'cat.ai', tech: 'PowerShell · Ollama · LLM local', description: 'Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diário e a lore da campanha, e lê os PDFs do sistema.', html_url: 'https://github.com/madeiragab/braseiro', homepage: 'https://github.com/madeiragab/braseiro/blob/main/docs/README.md', stargazers_count: 0 },
 ];
 
 const LOCALES = { pt: 'pt-BR', en: 'en-US', es: 'es-ES' };
@@ -147,7 +154,7 @@ function normalizarRepo(repo) {
     tech: tech || (repo.language || ''),
     description: repo.description || '',
     html_url: repo.html_url,
-    homepage: repo.homepage,
+    homepage: repo.homepage || LINK_SEM_WEBSITE[repo.name] || null,
     stargazers_count: repo.stargazers_count || 0,
   };
 }
