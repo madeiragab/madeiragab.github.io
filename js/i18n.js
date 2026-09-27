@@ -79,6 +79,7 @@ const TEXTOS = {
     'proj.count': '{n} no total',
     'proj.verGithub': 'Ver no GitHub ↗',
     'proj.demo': 'Demo ↗',
+    'proj.docs': 'Docs ↗',
     'proj.semDesc': 'Sem descrição (ainda!).',
     'proj.todos': 'TODOS',
 
@@ -214,6 +215,7 @@ const TEXTOS = {
     'proj.count': '{n} in total',
     'proj.verGithub': 'View on GitHub ↗',
     'proj.demo': 'Demo ↗',
+    'proj.docs': 'Docs ↗',
     'proj.semDesc': 'No description (yet!).',
     'proj.todos': 'ALL',
 
@@ -349,6 +351,7 @@ const TEXTOS = {
     'proj.count': '{n} en total',
     'proj.verGithub': 'Ver en GitHub ↗',
     'proj.demo': 'Demo ↗',
+    'proj.docs': 'Docs ↗',
     'proj.semDesc': 'Sin descripción (¡todavía!).',
     'proj.todos': 'TODOS',
 

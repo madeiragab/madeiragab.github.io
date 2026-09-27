@@ -11,6 +11,10 @@ The site https://madeiragab.github.io lists **every public repository owned by t
 3. In the **Topics** field, type `portifolio` and confirm.
 4. While you're there, fill in:
    - **Description** → this is the text shown on the project card;
+   - **Website** → becomes the card's second button: **Demo ↗** if it is a
+     real site (the project's GitHub Pages, for example), **Docs ↗** if it
+     points back to GitHub (the `docs` folder, a README). Left empty, the
+     card only shows "View on GitHub";
    - **1 category topic** (becomes the filter on the site):
 
      | Topic | Filter on the site |

@@ -14,6 +14,10 @@ GitHub em tempo real — nenhum código do site precisa ser alterado.
 3. No campo **Topics**, digite `portifolio` e confirme.
 4. Aproveite e preencha também:
    - **Description** → é o texto que aparece no card do projeto;
+   - **Website** → vira o segundo botão do card: **Demo ↗** se for um site
+     de verdade (o GitHub Pages do projeto, por exemplo), **Docs ↗** se
+     apontar para o próprio GitHub (a pasta `docs`, um README). Vazio, o card
+     fica só com "Ver no GitHub";
    - **1 topic de categoria** (vira o filtro no site):
 
      | Topic | Filtro no site |
