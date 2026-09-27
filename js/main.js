@@ -32,14 +32,15 @@ const CATEGORIA_PADRAO = 'cat.outro';
 const PROJETOS_FALLBACK = [
   { name: 'lastro', categoria: 'cat.tool', tech: 'Rust · B+Tree · WAL', description: 'Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com recuperação de crash, parser SQL e MVCC.', html_url: 'https://github.com/madeiragab/lastro', homepage: 'https://madeiragab.github.io/lastro/', stargazers_count: 0 },
   { name: 'market-direction', categoria: 'cat.ai', tech: 'Python · scikit learn · LightGBM · pandas', description: 'Previsão direcional de ações para B3 e S&P 500, construída em torno de medir se dá para acreditar na previsão. Walk-forward com embargo, auditoria de vazamento e custo de transação.', html_url: 'https://github.com/madeiragab/market-direction', homepage: 'https://madeiragab.github.io/market-direction/', stargazers_count: 0 },
-  { name: 'rastro', categoria: 'cat.backend', tech: 'FastAPI · PostGIS · TypeScript · Docker', description: 'Rastreamento em tempo real e geocerca para rebanho bovino, com autenticação Argon2id e simulador de rebanho embutido.', html_url: 'https://github.com/madeiragab/rastro', stargazers_count: 1 },
+  { name: 'rastro', categoria: 'cat.backend', tech: 'FastAPI · PostGIS · TypeScript · Docker', description: 'Rastreamento em tempo real e geocerca para rebanho bovino, com autenticação Argon2id e simulador de rebanho embutido.', html_url: 'https://github.com/madeiragab/rastro', homepage: 'https://github.com/madeiragab/rastro/blob/main/docs/README.md', stargazers_count: 1 },
   { name: 'ascensao-dos-semideuses', categoria: 'cat.game', tech: 'Python · HTML · Game design', description: 'RPG de mesa autoral: Livro do Jogador, Bestiário e simulador de balanceamento com 40 mil combates medidos.', html_url: 'https://github.com/madeiragab/ascensao-dos-semideuses', homepage: 'https://madeiragab.github.io/ascensao-dos-semideuses/', stargazers_count: 2 },
-  { name: 'geicis-ponto', categoria: 'cat.backend', tech: 'Django · DRF · React', description: 'Sistema de ponto para estagiários: ranking de horas, mínimo semanal e alerta por e-mail. Domínio fechado antes do código.', html_url: 'https://github.com/madeiragab/geicis-ponto', stargazers_count: 1 },
-  { name: 'social-network', categoria: 'cat.backend', tech: 'Django · DRF · PostgreSQL', description: 'Rede social backend-first: domínio modelado em UML antes do código, regras de negócio no servidor e documentação completa.', html_url: 'https://github.com/madeiragab/social-network', stargazers_count: 2 },
-  { name: 'tcc-simulador-ia', categoria: 'cat.ai', tech: 'Godot · GDScript · Python', description: 'Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.', html_url: 'https://github.com/madeiragab/tcc-simulador-ia', stargazers_count: 2 },
-  { name: 'darkos-ga36-port', categoria: 'cat.hardware', tech: 'Linux · Engenharia reversa', description: 'Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).', html_url: 'https://github.com/madeiragab/darkos-ga36-port', stargazers_count: 4 },
-  { name: 'rpg-panel', categoria: 'cat.web', tech: 'Django · Python · JS', description: 'Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventário e papéis de mestre/jogador.', html_url: 'https://github.com/madeiragab/rpg-panel', stargazers_count: 2 },
-  { name: 'Guns-and-boots', categoria: 'cat.game', tech: 'Python · Pygame', description: 'Jogo 2D retrô-futurista por turnos, com máquina de estados, sistema de save e modo mobile.', html_url: 'https://github.com/madeiragab/Guns-and-boots', stargazers_count: 2 },
+  { name: 'geicis-ponto', categoria: 'cat.backend', tech: 'Django · DRF · React', description: 'Sistema de ponto para estagiários: ranking de horas, mínimo semanal e alerta por e-mail. Domínio fechado antes do código.', html_url: 'https://github.com/madeiragab/geicis-ponto', homepage: 'https://github.com/madeiragab/geicis-ponto/tree/main/docs', stargazers_count: 1 },
+  { name: 'social-network', categoria: 'cat.backend', tech: 'Django · DRF · PostgreSQL', description: 'Rede social backend-first: domínio modelado em UML antes do código, regras de negócio no servidor e documentação completa.', html_url: 'https://github.com/madeiragab/social-network', homepage: 'https://github.com/madeiragab/social-network/tree/main/docs', stargazers_count: 2 },
+  { name: 'tcc-simulador-ia', categoria: 'cat.ai', tech: 'Godot · GDScript · Python', description: 'Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.', html_url: 'https://github.com/madeiragab/tcc-simulador-ia', homepage: 'https://madeiragab.github.io/tcc-simulador-ia/', stargazers_count: 2 },
+  { name: 'darkos-ga36-port', categoria: 'cat.hardware', tech: 'Linux · Engenharia reversa', description: 'Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).', html_url: 'https://github.com/madeiragab/darkos-ga36-port', homepage: 'https://github.com/madeiragab/darkos-ga36-port/tree/main/docs', stargazers_count: 4 },
+  { name: 'rpg-panel', categoria: 'cat.web', tech: 'Django · Python · JS', description: 'Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventário e papéis de mestre/jogador.', html_url: 'https://github.com/madeiragab/rpg-panel', homepage: 'https://github.com/madeiragab/rpg-panel/tree/main/docs', stargazers_count: 2 },
+  { name: 'Guns-and-boots', categoria: 'cat.game', tech: 'Python · Pygame', description: 'Jogo 2D retrô-futurista por turnos, com máquina de estados, sistema de save e modo mobile.', html_url: 'https://github.com/madeiragab/Guns-and-boots', homepage: 'https://github.com/madeiragab/Guns-and-boots/tree/main/docs', stargazers_count: 2 },
+  { name: 'braseiro', categoria: 'cat.ai', tech: 'PowerShell · Ollama · LLM local', description: 'Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diário e a lore da campanha, e lê os PDFs do sistema.', html_url: 'https://github.com/madeiragab/braseiro', stargazers_count: 0 },
 ];
 
 const LOCALES = { pt: 'pt-BR', en: 'en-US', es: 'es-ES' };
@@ -176,6 +177,7 @@ function renderProjetos(categoria) {
     .sort((a, b) => Number(b.destaque) - Number(a.destaque));
   projGrid.innerHTML = lista.map(p => {
     const desc = i18n.descricaoProjeto(p.name, p.description) || i18n.t('proj.semDesc');
+    const linkExtra = linkDoProjeto(p.homepage);
     return `
     <article class="proj-card${p.destaque ? ' destaque' : ''}">
       ${p.destaque ? `<p class="proj-selo">${esc(i18n.t('proj.destaque'))}</p>` : ''}
@@ -187,11 +189,24 @@ function renderProjetos(categoria) {
       <p class="proj-desc">${esc(desc)}</p>
       <div class="proj-links">
         <a href="${esc(p.html_url)}" target="_blank" rel="noopener">${esc(i18n.t('proj.verGithub'))}</a>
-        ${p.homepage ? `<a href="${esc(p.homepage)}" target="_blank" rel="noopener">${esc(i18n.t('proj.demo'))}</a>` : ''}
+        ${linkExtra ? `<a href="${esc(linkExtra.href)}" target="_blank" rel="noopener">${esc(i18n.t(linkExtra.rotulo))}</a>` : ''}
         ${p.stargazers_count ? `<span class="proj-stars">★ ${p.stargazers_count}</span>` : ''}
       </div>
     </article>`;
   }).join('');
+}
+
+/* O campo "Website" do repositório vira o segundo link do card. Só é DEMO
+   quando aponta para um site de verdade (o GitHub Pages do projeto). Quando
+   aponta para o próprio GitHub — a pasta docs, um README —, é documentação, e
+   chamar isso de demo prometia ao visitante uma coisa que não existia. */
+function linkDoProjeto(homepage) {
+  if (!homepage) return null;
+  let url;
+  try { url = new URL(homepage); } catch { return null; }
+  if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
+  const noGithub = /^(www\.)?github\.com$/i.test(url.hostname);
+  return { href: url.href, rotulo: noGithub ? 'proj.docs' : 'proj.demo' };
 }
 
 function esc(s) {
