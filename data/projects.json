@@ -1,24 +1,5 @@
 [
   {
-    "name": "braseiro",
-    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
-    "html_url": "https://github.com/madeiragab/braseiro",
-    "homepage": null,
-    "language": "PowerShell",
-    "topics": [
-      "ai",
-      "llm",
-      "local-first",
-      "ollama",
-      "portifolio",
-      "powershell",
-      "rpg",
-      "windows"
-    ],
-    "stargazers_count": 0,
-    "updated_at": "2026-09-27T01:18:18Z"
-  },
-  {
     "name": "ascensao-dos-semideuses",
     "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
     "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
@@ -36,7 +17,26 @@
       "tabletop-rpg"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-09-27T00:49:07Z"
+    "updated_at": "2026-09-27T21:11:12Z"
+  },
+  {
+    "name": "braseiro",
+    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
+    "html_url": "https://github.com/madeiragab/braseiro",
+    "homepage": null,
+    "language": "PowerShell",
+    "topics": [
+      "ai",
+      "llm",
+      "local-first",
+      "ollama",
+      "portifolio",
+      "powershell",
+      "rpg",
+      "windows"
+    ],
+    "stargazers_count": 0,
+    "updated_at": "2026-09-27T01:18:18Z"
   },
   {
     "name": "darkos-ga36-port",
