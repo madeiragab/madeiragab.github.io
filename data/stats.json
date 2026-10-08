@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T20:42:20.251Z",
+  "updated_at": "2026-10-08T20:45:34.508Z",
   "user": "madeiragab",
   "total_last_year": 844,
   "days": [
@@ -1473,6 +1473,10 @@
     },
     {
       "date": "2026-10-07",
+      "count": 0
+    },
+    {
+      "date": "2026-10-08",
       "count": 0
     }
   ]
