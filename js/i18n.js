@@ -429,6 +429,7 @@ const TEXTOS = {
    Se um projeto novo não estiver aqui, o site usa a descrição do GitHub. */
 const DESCRICOES = {
   pt: {
+    'newlife': 'Simulador de vida estilo BitLife feito do zero em JavaScript puro: genética herdada, escola, carreiras, relações, crimes, seita, golpe de Estado e mundos alternativos (zumbi, isekai, Marte). Mais de 4.000 eventos, roda no navegador, no Windows e no Android, e os apps se atualizam sozinhos.',
     'market-direction': 'Previsão direcional de ações para B3 e S&P 500, construída em torno de medir se dá para acreditar na previsão: walk-forward com embargo, auditoria de vazamento e custo de transação. O resultado honesto é que não bate comprar e segurar.',
     'lastro': 'Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com recuperação de crash, parser SQL e MVCC.',
     'ascensao-dos-semideuses': 'RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiário e simulador de balanceamento em Python com 40 mil combates medidos.',
@@ -441,6 +442,7 @@ const DESCRICOES = {
     'darkos-ga36-port': 'Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).',
   },
   en: {
+    'newlife': 'BitLife-style life simulator built from scratch in vanilla JavaScript: inherited genetics, school, careers, relationships, crime, cults, coups and alternate worlds (zombies, isekai, Mars). 4,000+ events, runs in the browser, on Windows and Android, with self-updating apps.',
     'market-direction': 'Directional stock prediction for B3 and the S&P 500, built around measuring whether the prediction is worth believing: walk-forward with an embargo, a leakage audit and transaction cost. The honest result is that it does not beat buy and hold.',
     'lastro': 'Embedded relational database written from scratch in Rust: pager, B+Tree, WAL with crash recovery, SQL parser and MVCC.',
     'ascensao-dos-semideuses': 'Original tabletop RPG: Greek demigods in the modern world. Player handbook, bestiary and a Python balancing simulator with 40,000 measured fights.',
@@ -453,6 +455,7 @@ const DESCRICOES = {
     'darkos-ga36-port': 'Autopsy, preservation and documentation of a clone handheld console (GA36-MB / Allwinner A33).',
   },
   es: {
+    'newlife': 'Simulador de vida estilo BitLife hecho desde cero en JavaScript puro: genética heredada, escuela, carreras, relaciones, crímenes, sectas, golpes de Estado y mundos alternativos (zombis, isekai, Marte). Más de 4.000 eventos, funciona en el navegador, Windows y Android, con apps que se actualizan solas.',
     'market-direction': 'Prediccion direccional de acciones para B3 y S&P 500, construida en torno a medir si la prediccion merece credito: walk-forward con embargo, auditoria de fuga y coste de transaccion. El resultado honesto es que no supera comprar y mantener.',
     'lastro': 'Base de datos relacional embebida escrita desde cero en Rust: pager, B+Tree, WAL con recuperacion de fallos, parser SQL y MVCC.',
     'ascensao-dos-semideuses': 'Juego de rol de mesa propio: semidioses griegos en el mundo moderno. Manual del jugador, bestiario y simulador de balance en Python con 40.000 combates medidos.',
