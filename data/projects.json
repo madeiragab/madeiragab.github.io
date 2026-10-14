@@ -1,5 +1,26 @@
 [
   {
+    "name": "newlife",
+    "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
+    "html_url": "https://github.com/madeiragab/newlife",
+    "homepage": "https://madeiragab.github.io/newlife/",
+    "language": "JavaScript",
+    "topics": [
+      "android",
+      "game",
+      "javascript",
+      "jogo",
+      "life-simulator",
+      "portifolio",
+      "pt-br",
+      "simulador-de-vida",
+      "simulation",
+      "windows"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-10-14T12:39:03Z"
+  },
+  {
     "name": "ascensao-dos-semideuses",
     "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
     "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
