@@ -1,22 +1,5 @@
 [
   {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "destaque",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-11-04T13:05:00Z"
-  },
-  {
     "name": "newlife",
     "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
     "html_url": "https://github.com/madeiragab/newlife",
@@ -35,7 +18,24 @@
       "windows"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-11-02T15:11:32Z"
+    "updated_at": "2026-11-09T00:48:23Z"
+  },
+  {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "destaque",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-11-04T13:05:00Z"
   },
   {
     "name": "ascensao-dos-semideuses",
