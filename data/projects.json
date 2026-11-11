@@ -1,113 +1,5 @@
 [
   {
-    "name": "newlife",
-    "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
-    "html_url": "https://github.com/madeiragab/newlife",
-    "homepage": "https://madeiragab.github.io/newlife/",
-    "language": "JavaScript",
-    "topics": [
-      "android",
-      "game",
-      "javascript",
-      "jogo",
-      "life-simulator",
-      "portifolio",
-      "pt-br",
-      "simulador-de-vida",
-      "simulation",
-      "windows"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-11-09T00:48:23Z"
-  },
-  {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "destaque",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-11-04T13:05:00Z"
-  },
-  {
-    "name": "ascensao-dos-semideuses",
-    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
-    "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
-    "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
-    "language": "HTML",
-    "topics": [
-      "balancing",
-      "game",
-      "game-design",
-      "greek-mythology",
-      "portifolio",
-      "python",
-      "rpg",
-      "simulation",
-      "tabletop-rpg"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-09-27T21:11:12Z"
-  },
-  {
-    "name": "braseiro",
-    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
-    "html_url": "https://github.com/madeiragab/braseiro",
-    "homepage": null,
-    "language": "PowerShell",
-    "topics": [
-      "ai",
-      "llm",
-      "local-first",
-      "ollama",
-      "portifolio",
-      "powershell",
-      "rpg",
-      "windows"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-10-02T01:26:34Z"
-  },
-  {
-    "name": "darkos-ga36-port",
-    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
-    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
-    "homepage": "https://github.com/madeiragab/darkos-ga36-port/tree/main/docs",
-    "language": "Python",
-    "topics": [
-      "hardware",
-      "linux",
-      "portifolio",
-      "reverse-engineering"
-    ],
-    "stargazers_count": 5,
-    "updated_at": "2026-10-13T13:26:04Z"
-  },
-  {
-    "name": "rpg-panel",
-    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
-    "html_url": "https://github.com/madeiragab/rpg-panel",
-    "homepage": "https://github.com/madeiragab/rpg-panel/tree/main/docs",
-    "language": "Python",
-    "topics": [
-      "django",
-      "javascript",
-      "portifolio",
-      "python",
-      "web"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-09-08T09:39:16Z"
-  },
-  {
     "name": "lastro",
     "description": "Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com crash recovery, parser SQL e MVCC.",
     "html_url": "https://github.com/madeiragab/lastro",
@@ -126,52 +18,56 @@
       "webassembly"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-09-02T14:49:15Z"
+    "updated_at": "2026-11-11T00:54:28Z"
   },
   {
-    "name": "geicis-ponto",
-    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
-    "html_url": "https://github.com/madeiragab/geicis-ponto",
-    "homepage": "https://github.com/madeiragab/geicis-ponto/tree/main/docs",
-    "language": "Python",
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "destaque",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-11-11T00:55:18Z"
+  },
+  {
+    "name": "social-network",
+    "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
+    "html_url": "https://github.com/madeiragab/social-network",
+    "homepage": "https://github.com/madeiragab/social-network/tree/main/docs",
+    "language": "JavaScript",
     "topics": [
       "backend",
       "django",
-      "jwt-authentication",
+      "django-rest-framework",
       "portifolio",
-      "python",
-      "react",
-      "rest-api",
-      "restframework",
-      "sqlite",
-      "tailwind",
-      "vite"
+      "postgresql"
     ],
-    "stargazers_count": 1,
-    "updated_at": "2026-09-02T13:01:01Z"
+    "stargazers_count": 2,
+    "updated_at": "2026-11-11T00:55:02Z"
   },
   {
-    "name": "market-direction",
-    "description": "Next-day directional stock prediction for B3 and S&P 500, built around measuring whether the prediction is worth believing. Walk-forward, leakage audit, transaction cost, calibration. Docs in EN/PT.",
-    "html_url": "https://github.com/madeiragab/market-direction",
-    "homepage": "https://madeiragab.github.io/market-direction/",
+    "name": "rpg-panel",
+    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
+    "html_url": "https://github.com/madeiragab/rpg-panel",
+    "homepage": "https://github.com/madeiragab/rpg-panel/tree/main/docs",
     "language": "Python",
     "topics": [
-      "ai",
-      "backtesting",
-      "data-science",
-      "destaque",
-      "lightgbm",
-      "machine-learning",
-      "pandas",
+      "django",
+      "javascript",
       "portifolio",
       "python",
-      "quantitative-finance",
-      "scikit-learn",
-      "time-series"
+      "web"
     ],
-    "stargazers_count": 1,
-    "updated_at": "2026-09-02T12:51:01Z"
+    "stargazers_count": 2,
+    "updated_at": "2026-11-11T00:55:05Z"
   },
   {
     "name": "rastro",
@@ -200,23 +96,106 @@
       "typescript"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-09-02T12:49:10Z"
+    "updated_at": "2026-11-11T00:54:29Z"
   },
   {
-    "name": "social-network",
-    "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
-    "html_url": "https://github.com/madeiragab/social-network",
-    "homepage": "https://github.com/madeiragab/social-network/tree/main/docs",
-    "language": "JavaScript",
+    "name": "market-direction",
+    "description": "Next-day directional stock prediction for B3 and S&P 500, built around measuring whether the prediction is worth believing. Walk-forward, leakage audit, transaction cost, calibration. Docs in EN/PT.",
+    "html_url": "https://github.com/madeiragab/market-direction",
+    "homepage": "https://madeiragab.github.io/market-direction/",
+    "language": "Python",
+    "topics": [
+      "ai",
+      "backtesting",
+      "data-science",
+      "destaque",
+      "lightgbm",
+      "machine-learning",
+      "pandas",
+      "portifolio",
+      "python",
+      "quantitative-finance",
+      "scikit-learn",
+      "time-series"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-11-11T01:39:53Z"
+  },
+  {
+    "name": "geicis-ponto",
+    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
+    "html_url": "https://github.com/madeiragab/geicis-ponto",
+    "homepage": "https://github.com/madeiragab/geicis-ponto/tree/main/docs",
+    "language": "Python",
     "topics": [
       "backend",
       "django",
-      "django-rest-framework",
+      "jwt-authentication",
       "portifolio",
-      "postgresql"
+      "python",
+      "react",
+      "rest-api",
+      "restframework",
+      "sqlite",
+      "tailwind",
+      "vite"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-11-11T00:54:08Z"
+  },
+  {
+    "name": "darkos-ga36-port",
+    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
+    "html_url": "https://github.com/madeiragab/darkos-ga36-port",
+    "homepage": "https://github.com/madeiragab/darkos-ga36-port/tree/main/docs",
+    "language": "Python",
+    "topics": [
+      "hardware",
+      "linux",
+      "portifolio",
+      "reverse-engineering"
+    ],
+    "stargazers_count": 5,
+    "updated_at": "2026-11-11T00:54:07Z"
+  },
+  {
+    "name": "braseiro",
+    "description": "Mestre de RPG que roda 100% offline num pendrive, sem instalar nada. Escreve sozinho a ficha, o diario e a lore da campanha, e le os PDFs do sistema.",
+    "html_url": "https://github.com/madeiragab/braseiro",
+    "homepage": null,
+    "language": "PowerShell",
+    "topics": [
+      "ai",
+      "llm",
+      "local-first",
+      "ollama",
+      "portifolio",
+      "powershell",
+      "rpg",
+      "windows"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-11-11T00:53:43Z"
+  },
+  {
+    "name": "ascensao-dos-semideuses",
+    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
+    "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
+    "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
+    "language": "HTML",
+    "topics": [
+      "balancing",
+      "game",
+      "game-design",
+      "greek-mythology",
+      "portifolio",
+      "python",
+      "rpg",
+      "simulation",
+      "tabletop-rpg"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-09-02T12:49:10Z"
+    "updated_at": "2026-11-11T00:53:43Z"
   },
   {
     "name": "Guns-and-boots",
@@ -231,6 +210,27 @@
       "python"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-09-02T12:49:13Z"
+    "updated_at": "2026-11-11T00:53:00Z"
+  },
+  {
+    "name": "newlife",
+    "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
+    "html_url": "https://github.com/madeiragab/newlife",
+    "homepage": "https://madeiragab.github.io/newlife/",
+    "language": "JavaScript",
+    "topics": [
+      "android",
+      "game",
+      "javascript",
+      "jogo",
+      "life-simulator",
+      "portifolio",
+      "pt-br",
+      "simulador-de-vida",
+      "simulation",
+      "windows"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-11-09T00:48:23Z"
   }
 ]
