@@ -166,7 +166,7 @@ body.denso { font-size: 8.5pt; }
     padding: 0;
     box-shadow: none;
   }
-  @page { size: A4; margin: 9mm 12mm; }
+  @page { size: A4; margin: 7mm 12mm; }
   a { color: inherit; }
 }
 
