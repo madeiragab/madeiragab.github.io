@@ -1,7 +1,28 @@
 [
   {
+    "name": "newlife",
+    "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
+    "html_url": "https://github.com/madeiragab/newlife",
+    "homepage": "https://madeiragab.github.io/newlife/",
+    "language": "JavaScript",
+    "topics": [
+      "android",
+      "game",
+      "javascript",
+      "jogo",
+      "life-simulator",
+      "portifolio",
+      "pt-br",
+      "simulador-de-vida",
+      "simulation",
+      "windows"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-11-09T00:48:23Z"
+  },
+  {
     "name": "lastro",
-    "description": "Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com crash recovery, parser SQL e MVCC.",
+    "description": "Banco de dados relacional embutido escrito do zero em Rust: pager, B+Tree, WAL com recuperação de crash, parser SQL e MVCC.",
     "html_url": "https://github.com/madeiragab/lastro",
     "homepage": "https://madeiragab.github.io/lastro/",
     "language": "Rust",
@@ -18,11 +39,11 @@
       "webassembly"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-11-11T00:54:28Z"
+    "updated_at": "2026-11-12T15:00:17Z"
   },
   {
     "name": "tcc-simulador-ia",
-    "description": "Simulador tatico (TCC) para avaliar a qualidade estrategica de agentes de IA em ambientes de decisao.",
+    "description": "Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.",
     "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
     "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
     "language": "GDScript",
@@ -35,11 +56,11 @@
       "python"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-11-11T00:55:18Z"
+    "updated_at": "2026-11-12T15:00:11Z"
   },
   {
     "name": "social-network",
-    "description": "Rede social backend-first: dominio modelado em UML antes do codigo, regras de negocio no servidor e documentacao completa.",
+    "description": "Rede social backend-first: domínio modelado em UML antes do código, regras de negócio no servidor e documentação completa.",
     "html_url": "https://github.com/madeiragab/social-network",
     "homepage": "https://github.com/madeiragab/social-network/tree/main/docs",
     "language": "JavaScript",
@@ -51,11 +72,11 @@
       "postgresql"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-11-11T00:55:02Z"
+    "updated_at": "2026-11-12T15:00:13Z"
   },
   {
     "name": "rpg-panel",
-    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventario e papeis de mestre/jogador.",
+    "description": "Painel web para gerenciar campanhas de RPG de mesa — campanhas, personagens, inventário e papéis de mestre/jogador.",
     "html_url": "https://github.com/madeiragab/rpg-panel",
     "homepage": "https://github.com/madeiragab/rpg-panel/tree/main/docs",
     "language": "Python",
@@ -67,11 +88,11 @@
       "web"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-11-11T00:55:05Z"
+    "updated_at": "2026-11-12T15:00:12Z"
   },
   {
     "name": "rastro",
-    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticacao com Argon2id e rotacao de refresh token, simulador de rebanho embutido.",
+    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticação com Argon2id e rotação de refresh token, simulador de rebanho embutido.",
     "html_url": "https://github.com/madeiragab/rastro",
     "homepage": "https://github.com/madeiragab/rastro/blob/main/docs/README.md",
     "language": "Python",
@@ -96,7 +117,7 @@
       "typescript"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-11-11T00:54:29Z"
+    "updated_at": "2026-11-12T15:00:14Z"
   },
   {
     "name": "market-direction",
@@ -119,11 +140,11 @@
       "time-series"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-11-11T01:39:53Z"
+    "updated_at": "2026-11-11T22:35:14Z"
   },
   {
     "name": "geicis-ponto",
-    "description": "Sistema de ponto para estagiarios do GEICIS. Dominio modelado antes do codigo: Django + DRF, ranking de horas e alerta semanal por e-mail.",
+    "description": "Sistema de ponto para estagiários do GEICIS. Domínio modelado antes do código: Django + DRF, ranking de horas e alerta semanal por e-mail.",
     "html_url": "https://github.com/madeiragab/geicis-ponto",
     "homepage": "https://github.com/madeiragab/geicis-ponto/tree/main/docs",
     "language": "Python",
@@ -141,11 +162,11 @@
       "vite"
     ],
     "stargazers_count": 1,
-    "updated_at": "2026-11-11T00:54:08Z"
+    "updated_at": "2026-11-12T15:00:15Z"
   },
   {
     "name": "darkos-ga36-port",
-    "description": "Autopsia, preservacao e documentacao de um console portatil clone (GA36-MB / Allwinner A33).",
+    "description": "Autópsia, preservação e documentação de um console portátil clone (GA36-MB / Allwinner A33).",
     "html_url": "https://github.com/madeiragab/darkos-ga36-port",
     "homepage": "https://github.com/madeiragab/darkos-ga36-port/tree/main/docs",
     "language": "Python",
@@ -156,7 +177,7 @@
       "reverse-engineering"
     ],
     "stargazers_count": 5,
-    "updated_at": "2026-11-11T00:54:07Z"
+    "updated_at": "2026-11-12T15:00:15Z"
   },
   {
     "name": "braseiro",
@@ -179,7 +200,7 @@
   },
   {
     "name": "ascensao-dos-semideuses",
-    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiario e simulador de balanceamento em Python.",
+    "description": "RPG de mesa autoral: semideuses gregos no mundo moderno. Livro do Jogador, Bestiário e simulador de balanceamento em Python.",
     "html_url": "https://github.com/madeiragab/ascensao-dos-semideuses",
     "homepage": "https://madeiragab.github.io/ascensao-dos-semideuses/",
     "language": "HTML",
@@ -195,11 +216,11 @@
       "tabletop-rpg"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-11-11T00:53:43Z"
+    "updated_at": "2026-11-12T15:00:18Z"
   },
   {
     "name": "Guns-and-boots",
-    "description": "Jogo 2D retro-futurista por turnos, com maquina de estados, sistema de save e modo mobile.",
+    "description": "Jogo 2D retrô-futurista por turnos, com máquina de estados, sistema de save e modo mobile.",
     "html_url": "https://github.com/madeiragab/Guns-and-boots",
     "homepage": "https://github.com/madeiragab/Guns-and-boots/tree/main/docs",
     "language": "Python",
@@ -210,27 +231,6 @@
       "python"
     ],
     "stargazers_count": 2,
-    "updated_at": "2026-11-11T00:53:00Z"
-  },
-  {
-    "name": "newlife",
-    "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
-    "html_url": "https://github.com/madeiragab/newlife",
-    "homepage": "https://madeiragab.github.io/newlife/",
-    "language": "JavaScript",
-    "topics": [
-      "android",
-      "game",
-      "javascript",
-      "jogo",
-      "life-simulator",
-      "portifolio",
-      "pt-br",
-      "simulador-de-vida",
-      "simulation",
-      "windows"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-11-09T00:48:23Z"
+    "updated_at": "2026-11-12T15:00:16Z"
   }
 ]
