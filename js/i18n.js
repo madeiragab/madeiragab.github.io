@@ -1,5 +1,5 @@
 /* ============================================================
-   DAROSA.DEV — internacionalização (pt · en · es)
+   Portfólio Gabriel Madeira — internacionalização (pt · en · es)
 
    Como funciona:
    - No HTML, marque o elemento com um destes atributos:
@@ -19,7 +19,7 @@ const TEXTOS = {
   /* ---------------------------------------------------------- */
   pt: {
     'meta.lang': 'pt-BR',
-    'meta.title': 'Darosa · Dev Backend',
+    'meta.title': 'Gabriel Madeira · Desenvolvedor Backend',
     'meta.desc': 'Gabriel Madeira — estudante de Ciência da Computação focado em backend, Django, PostgreSQL e APIs REST. Portfólio de projetos reais.',
 
     'nav.sobre': 'SOBRE',
@@ -148,14 +148,14 @@ const TEXTOS = {
     'form.enviando': 'ENVIANDO…',
     'form.enviado': '✓ MENSAGEM ENVIADA',
 
-    'footer.1': 'DAROSA <span class="red">%</span> DEV BACKEND — construído com curiosidade e café.',
+    'footer.1': 'GABRIEL MADEIRA <span class="red">%</span> DEV BACKEND — construído com curiosidade e café.',
     'footer.2': '>_ projetos carregados ao vivo da API do GitHub',
   },
 
   /* ---------------------------------------------------------- */
   en: {
     'meta.lang': 'en',
-    'meta.title': 'Darosa · Backend Dev',
+    'meta.title': 'Gabriel Madeira · Backend Developer',
     'meta.desc': 'Gabriel Madeira — Computer Science student focused on backend, Django, PostgreSQL and REST APIs. Portfolio of real projects.',
 
     'nav.sobre': 'ABOUT',
@@ -284,14 +284,14 @@ const TEXTOS = {
     'form.enviando': 'SENDING…',
     'form.enviado': '✓ MESSAGE SENT',
 
-    'footer.1': 'DAROSA <span class="red">%</span> BACKEND DEV — built with curiosity and coffee.',
+    'footer.1': 'GABRIEL MADEIRA <span class="red">%</span> BACKEND DEV — built with curiosity and coffee.',
     'footer.2': '>_ projects loaded live from the GitHub API',
   },
 
   /* ---------------------------------------------------------- */
   es: {
     'meta.lang': 'es',
-    'meta.title': 'Darosa · Dev Backend',
+    'meta.title': 'Gabriel Madeira · Desarrollador Backend',
     'meta.desc': 'Gabriel Madeira — estudiante de Ciencias de la Computación enfocado en backend, Django, PostgreSQL y APIs REST. Portafolio de proyectos reales.',
 
     'nav.sobre': 'SOBRE MÍ',
@@ -420,7 +420,7 @@ const TEXTOS = {
     'form.enviando': 'ENVIANDO…',
     'form.enviado': '✓ MENSAJE ENVIADO',
 
-    'footer.1': 'DAROSA <span class="red">%</span> DEV BACKEND — construido con curiosidad y café.',
+    'footer.1': 'GABRIEL MADEIRA <span class="red">%</span> DEV BACKEND — construido con curiosidad y café.',
     'footer.2': '>_ proyectos cargados en vivo desde la API de GitHub',
   },
 };

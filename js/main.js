@@ -1,5 +1,5 @@
 /* ============================================================
-   DAROSA.DEV — lógica do site
+   Portfólio Gabriel Madeira — lógica do site
    - Projetos: carregados da API do GitHub (topic "portifolio")
    - Contribuições: data/stats.json (atualizado diariamente por
      GitHub Actions) com fallback para API pública
