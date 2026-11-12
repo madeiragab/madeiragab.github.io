@@ -1,6 +1,6 @@
 > 🇧🇷 [Português](README.md) · 🇬🇧 **English**
 
-# Darosa.dev — Gabriel Madeira's Portfolio
+# Gabriel Madeira's Portfolio
 
 > Personal portfolio in **black, red and white**, with projects loaded
 > **automatically from the GitHub API** and a daily refresh via GitHub Actions.

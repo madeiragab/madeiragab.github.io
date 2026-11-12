@@ -44,13 +44,13 @@
     Estudante do último ano de Ciência da Computação no IFSULDEMINAS, com experiência prática
     desde 2023 em projetos reais — do levantamento de requisitos com o usuário final ao suporte
     pós-implantação. Foco em <b>backend</b>: modelagem de domínio, regras de negócio no servidor,
-    APIs REST e banco relacional. Contrato de API antes do código; resultado verificado por
-    teste em CI, inclusive quando é desfavorável.
+    APIs REST e banco relacional. Documento o contrato da API antes de codar e cubro o código
+    com testes no CI.
   </p>
 
   <h2>Habilidades técnicas</h2>
-  <p class="hab"><b>Backend e dados:</b> Python, Django, Django REST Framework, FastAPI, Node.js, Flask · PostgreSQL, PostGIS, SQLite, MySQL · pandas, scikit-learn, LightGBM</p>
-  <p class="hab"><b>Sistemas e ferramentas:</b> Rust, Docker, GitHub Actions, Linux, Git · JavaScript, TypeScript, React, React Native, HTML/CSS, Tailwind · Godot/GDScript, PHP, WordPress, C++ (maratonas: OLIP, regional)</p>
+  <p class="hab"><b>Principal:</b> Python, Django, Django REST Framework, FastAPI, SQL, PostgreSQL, PostGIS, APIs REST · Docker, Git, GitHub Actions, Linux</p>
+  <p class="hab"><b>Também usei:</b> Node.js, Flask, SQLite, MySQL · JavaScript, TypeScript, React, React Native, HTML/CSS, Tailwind · Rust · pandas, scikit-learn, LightGBM · Godot/GDScript, PHP, WordPress, C++ (maratonas: OLIP, regional)</p>
 
   <h2>Experiência profissional</h2>
 
@@ -71,7 +71,9 @@
     </div>
     <ul>
       <li>Módulo <b>Solicita</b> do aplicativo institucional (React Native, SQLite): qualquer aluno ou servidor abre uma solicitação — manutenção, peças, reparos — roteada automaticamente ao setor responsável. <b>Em uso por toda a comunidade do campus.</b></li>
-      <li>Time de <b>6 desenvolvedores</b> em <b>Scrum</b>, com Scrum Master dedicado, sobre arquitetura de componentes compartilhados. Autor do componente React + SQLite que serviu de base para o projeto começar; a sincronização entre o banco local e o backend Django — a parte mais difícil do sistema — foi construída a três desenvolvedores; a cada versão publicada pelos outros módulos era preciso ler código alheio, adaptar o meu e revalidar o comportamento. Entrega por sprint, com relatório semanal de desenvolvimento.</li>
+      <li>Construí, com mais 2 desenvolvedores, a <b>sincronização entre o banco local e o backend Django</b>, a parte mais difícil do sistema.</li>
+      <li>Escrevi o componente React + SQLite que serviu de base para o projeto começar.</li>
+      <li>Time de <b>6 desenvolvedores</b> em <b>Scrum</b>, com Scrum Master dedicado e componentes compartilhados: a cada versão dos outros módulos, eu lia o código deles, adaptava o meu e revalidava o comportamento. Entrega por sprint e relatório semanal.</li>
       <li>Requisitos levantados direto com o setor cliente, com visitas in loco; implantação, treinamento de usuários com pouca familiaridade com smartphones, testes e documentação técnica.</li>
     </ul>
   </div>
@@ -100,6 +102,16 @@
 
   <div class="item">
     <div class="titulo-item">
+      <span><span class="cargo-linha">Rastro</span> <span class="onde">— rastreamento e geocerca para rebanho bovino</span></span>
+      <span class="quando">github.com/madeiragab/rastro</span>
+    </div>
+    <ul>
+      <li>API FastAPI com PostGIS, Argon2id com rotação de refresh token, simulador de rebanho embutido e implantação em Docker. <span class="num">207</span> testes no CI contra PostGIS real, não stub. <span class="stack-inline">FastAPI · PostGIS · TypeScript · Docker</span></li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="titulo-item">
       <span><span class="cargo-linha">Lastro</span> <span class="onde">— banco de dados relacional embutido, escrito do zero em Rust</span></span>
       <span class="quando">madeiragab.github.io/lastro</span>
     </div>
@@ -115,16 +127,6 @@
     </div>
     <ul>
       <li>Walk-forward com embargo, custo de transação e auditoria de vazamento executável sobre <span class="num">40.169</span> previsões fora da amostra na B3 e <span class="num">47.805</span> nos EUA. Publicado como medido: <span class="num">50,60%</span> de acerto na B3 (p = 0,0079), nenhum sinal nos EUA, <b>nenhuma estratégia bateu comprar e segurar</b>. A entrega é a infraestrutura de medição. <span class="stack-inline">Python · scikit-learn · LightGBM</span></li>
-    </ul>
-  </div>
-
-  <div class="item">
-    <div class="titulo-item">
-      <span><span class="cargo-linha">Rastro</span> <span class="onde">— rastreamento e geocerca para rebanho bovino</span></span>
-      <span class="quando">github.com/madeiragab/rastro</span>
-    </div>
-    <ul>
-      <li>API FastAPI com PostGIS, Argon2id com rotação de refresh token, simulador de rebanho embutido e implantação em Docker. <span class="num">207</span> testes no CI contra PostGIS real, não stub. <span class="stack-inline">FastAPI · PostGIS · TypeScript · Docker</span></li>
     </ul>
   </div>
 
