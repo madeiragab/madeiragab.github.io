@@ -1,5 +1,51 @@
 [
   {
+    "name": "rastro",
+    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticação com Argon2id e rotação de refresh token, simulador de rebanho embutido.",
+    "html_url": "https://github.com/madeiragab/rastro",
+    "homepage": "https://github.com/madeiragab/rastro/blob/main/docs/README.md",
+    "language": "Python",
+    "topics": [
+      "agtech",
+      "cattle-tracking",
+      "destaque",
+      "docker",
+      "fastapi",
+      "geofencing",
+      "iot",
+      "leaflet",
+      "livestock",
+      "mobile",
+      "portifolio",
+      "postgis",
+      "postgresql",
+      "precision-livestock-farming",
+      "python",
+      "react",
+      "security",
+      "typescript"
+    ],
+    "stargazers_count": 1,
+    "updated_at": "2026-11-12T15:00:14Z"
+  },
+  {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "destaque",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-11-12T15:00:11Z"
+  },
+  {
     "name": "newlife",
     "description": "Simulador de vida em português para Windows e Android: genética, escola, carreiras, relações, crimes, lutas e modos fictícios.",
     "html_url": "https://github.com/madeiragab/newlife",
@@ -42,23 +88,6 @@
     "updated_at": "2026-11-12T15:00:17Z"
   },
   {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "destaque",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-11-12T15:00:11Z"
-  },
-  {
     "name": "social-network",
     "description": "Rede social backend-first: domínio modelado em UML antes do código, regras de negócio no servidor e documentação completa.",
     "html_url": "https://github.com/madeiragab/social-network",
@@ -89,35 +118,6 @@
     ],
     "stargazers_count": 2,
     "updated_at": "2026-11-12T15:00:12Z"
-  },
-  {
-    "name": "rastro",
-    "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticação com Argon2id e rotação de refresh token, simulador de rebanho embutido.",
-    "html_url": "https://github.com/madeiragab/rastro",
-    "homepage": "https://github.com/madeiragab/rastro/blob/main/docs/README.md",
-    "language": "Python",
-    "topics": [
-      "agtech",
-      "cattle-tracking",
-      "destaque",
-      "docker",
-      "fastapi",
-      "geofencing",
-      "iot",
-      "leaflet",
-      "livestock",
-      "mobile",
-      "portifolio",
-      "postgis",
-      "postgresql",
-      "precision-livestock-farming",
-      "python",
-      "react",
-      "security",
-      "typescript"
-    ],
-    "stargazers_count": 1,
-    "updated_at": "2026-11-12T15:00:14Z"
   },
   {
     "name": "market-direction",
