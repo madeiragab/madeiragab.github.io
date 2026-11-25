@@ -1,5 +1,22 @@
 [
   {
+    "name": "tcc-simulador-ia",
+    "description": "Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.",
+    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
+    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
+    "language": "GDScript",
+    "topics": [
+      "ai",
+      "destaque",
+      "gdscript",
+      "godot",
+      "portifolio",
+      "python"
+    ],
+    "stargazers_count": 2,
+    "updated_at": "2026-11-12T15:00:11Z"
+  },
+  {
     "name": "rastro",
     "description": "Rastreamento em tempo real e geocerca para rebanho bovino. App mobile-first, FastAPI + PostGIS, autenticação com Argon2id e rotação de refresh token, simulador de rebanho embutido.",
     "html_url": "https://github.com/madeiragab/rastro",
@@ -27,23 +44,6 @@
     ],
     "stargazers_count": 1,
     "updated_at": "2026-11-12T15:00:14Z"
-  },
-  {
-    "name": "tcc-simulador-ia",
-    "description": "Simulador tático (TCC) para avaliar a qualidade estratégica de agentes de IA em ambientes de decisão.",
-    "html_url": "https://github.com/madeiragab/tcc-simulador-ia",
-    "homepage": "https://madeiragab.github.io/tcc-simulador-ia/",
-    "language": "GDScript",
-    "topics": [
-      "ai",
-      "destaque",
-      "gdscript",
-      "godot",
-      "portifolio",
-      "python"
-    ],
-    "stargazers_count": 2,
-    "updated_at": "2026-11-12T15:00:11Z"
   },
   {
     "name": "newlife",
